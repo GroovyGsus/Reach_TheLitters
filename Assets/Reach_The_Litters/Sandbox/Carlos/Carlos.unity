@@ -191,12 +191,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1493293600}
-        m_MethodName: 
+      - m_Target: {fileID: 1493293601}
+        m_MethodName: SiPulsas
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -768,7 +768,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1493293600}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf383417ca81716428388175c55b45cd, type: 3}
+  m_Script: {fileID: 11500000, guid: 270bf9895a0397243aca54e0c4fbfe05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1493293602
