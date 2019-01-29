@@ -1,10 +1,12 @@
 fileFormatVersion: 2
-guid: 383e4e855dba18946aa4217edf62330f
+guid: 2fc01b77c39e8834ab625810805624cd
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Mandy triste_0
-    21300002: Mandy triste_1
-    21300004: Mandy triste_2
+    21300000: delfin_cola_0
+    21300002: delfin_cola_1
+    21300004: delfin_cola_2
+    21300006: delfin_cola_3
+    21300008: delfin_cola_4
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -98,53 +100,93 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mandy triste_0
+      name: delfin_cola_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 107
         y: 0
-        width: 393
-        height: 248
+        width: 87
+        height: 251
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c2864a080c38a04e9c81a9d5a3474e4
+      spriteID: 7404aff6b8140d641bd3a53f91333a67
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mandy triste_1
+      name: delfin_cola_1
       rect:
         serializedVersion: 2
-        x: 393
+        x: 407
         y: 0
-        width: 393
-        height: 248
+        width: 90
+        height: 251
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f787a3b9c1246748a15ff668e1c129e
+      spriteID: f31dc092844ee8a4494b90c498b02351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mandy triste_2
+      name: delfin_cola_2
       rect:
         serializedVersion: 2
-        x: 786
+        x: 764
         y: 0
-        width: 393
-        height: 248
+        width: 88
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f84510762fb820f44872cf4b28719e6e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: delfin_cola_3
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 0
+        width: 92
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93386e7f38852b41b62dd301e742203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: delfin_cola_4
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 0
+        width: 91
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,7 +194,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e7b8b1dbf04fba46ab11620e6d21bbf
+      spriteID: 0942e3fdc9697c946981f2bc7550ec41
       vertices: []
       indices: 
       edges: []
@@ -160,7 +202,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: c6f4427388964aa469dcee1f8ca53548
+    spriteID: 28cac436dee5bbb47b9128ac3300d93d
     vertices: []
     indices: 
     edges: []

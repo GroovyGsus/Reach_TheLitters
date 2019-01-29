@@ -1,7 +1,12 @@
 fileFormatVersion: 2
 guid: 8f3997f16d3e8684d9a46c13323ee2e5
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Animacion_Maddy_0
+    21300002: Animacion_Maddy_1
+    21300004: Animacion_Maddy_2
+    21300006: Animacion_Maddy_3
+    21300008: Animacion_Maddy_4
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -93,7 +98,107 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Animacion_Maddy_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 416
+        height: 248
+      alignment: 9
+      pivot: {x: 0.75508183, y: 0.5042789}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d39d863d45d4148a7ca117baf92992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animacion_Maddy_1
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 342
+        height: 248
+      alignment: 9
+      pivot: {x: 0.6768567, y: 0.5213941}
+      border: {x: 1, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24e5c1c482a855448dec86e3edaa6c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animacion_Maddy_2
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 315
+        height: 248
+      alignment: 9
+      pivot: {x: 0.62464195, y: 0.5042789}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e14c98bf18ca1440b1a2057a22a8222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animacion_Maddy_3
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 0
+        width: 361
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e942577e00471c44a82ab43e2382b249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animacion_Maddy_4
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 0
+        width: 361
+        height: 248
+      alignment: 9
+      pivot: {x: 0.39124042, y: 0.45721218}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bde0ca801d70104bab598955987789d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
