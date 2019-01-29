@@ -6,12 +6,14 @@ public class RompeCuerda : MonoBehaviour
 {
 
     HingeJoint2D jointCuerda;
+    SpriteRenderer sr;
     LineRenderer lr;
     bool conectado = true; 
 
     // Start is called before the first frame update
     void Start()
     {
+        sr = GetComponent<SpriteRenderer>();
         jointCuerda = GetComponent<HingeJoint2D>();
         lr = GetComponent<LineRenderer>();
         lr.positionCount = 2;
@@ -38,6 +40,7 @@ public class RompeCuerda : MonoBehaviour
             //gameObject.GetComponent<HingeJoint2D>();
             Destroy(jointCuerda);
             Destroy(lr);
+            Destroy(sr);
         }
     }
 }
