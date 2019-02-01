@@ -211,38 +211,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1517448841 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4636101071296054199, guid: 4011608dd6ca584469a9774b9bb993bd,
-    type: 3}
-  m_PrefabInstance: {fileID: 4636101069848096062}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &1517448843
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1517448841}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.000000029802322, y: -0.35865545}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.7255559, y: 0.2826891}
-  m_EdgeRadius: 0
 --- !u!1 &2017194314
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,26 +358,6 @@ PrefabInstance:
     - target: {fileID: 4636101071296054196, guid: 4011608dd6ca584469a9774b9bb993bd,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2468984791414718706, guid: 4011608dd6ca584469a9774b9bb993bd,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: -0.0014064312
-      objectReference: {fileID: 0}
-    - target: {fileID: 2468984791414718706, guid: 4011608dd6ca584469a9774b9bb993bd,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -1.0427982
-      objectReference: {fileID: 0}
-    - target: {fileID: 2468984791414718706, guid: 4011608dd6ca584469a9774b9bb993bd,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1.1992486
-      objectReference: {fileID: 0}
-    - target: {fileID: 2468984791414718706, guid: 4011608dd6ca584469a9774b9bb993bd,
-        type: 3}
-      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
