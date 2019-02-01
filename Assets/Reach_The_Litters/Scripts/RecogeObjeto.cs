@@ -29,6 +29,7 @@ public class RecogeObjeto : MonoBehaviour
             objeto = col.gameObject;
             rbObjeto = col.gameObject.GetComponent<Rigidbody2D>();
             rbObjeto.isKinematic = true;
+            rbObjeto.velocity = Vector2.zero;
 
 
         }
