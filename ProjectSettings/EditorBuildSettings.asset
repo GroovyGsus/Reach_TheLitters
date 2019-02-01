@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Reach_The_Litters/Sandbox/Mario_pruebas/pruebaBotones.unity
+    guid: a6d086a90722d774d875c0369f25cd9f
+  - enabled: 1
+    path: Assets/Reach_The_Litters/Scenes/Seleccion_Mundo.unity
+    guid: 8303658a628aa1545b63eadc660ef94b
   m_configObjects: {}
