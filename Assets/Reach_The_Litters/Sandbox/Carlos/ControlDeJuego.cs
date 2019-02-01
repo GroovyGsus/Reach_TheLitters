@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class ControlDeJuego : MonoBehaviour
 {
     bool pulsas = false;
@@ -18,4 +18,9 @@ public class ControlDeJuego : MonoBehaviour
             Time.timeScale = 1f;
         }
     }
+    public void Reinicio()
+    {
+        SceneManager.LoadScene(0);
+    }
+
 }
