@@ -15,7 +15,7 @@ public class PathFollow : MonoBehaviour
     Vector3 target;
     int posicionTarget;
    Vector2 position;
-    public bool pinchado = false;
+    bool pinchado = false;
     bool adelante = true;
 
     void Start()
