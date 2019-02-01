@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    static public int llaves = 0; 
+    static public int llaves = 0;
+
+    public bool[] nivelesM1;
 
     // Start is called before the first frame update
     void Start()
@@ -16,5 +18,10 @@ public class GameController : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void DesbloquearNivel(int nivel)
+    {
+        nivelesM1[nivel] = true;
     }
 }
