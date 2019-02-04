@@ -63,6 +63,9 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene("PantallaPrincipal");
     }
 
-
+    public void CargarPantallaOpciones()
+    {
+        SceneManager.LoadScene("PantallaOpciones");
+    }
 
 }
