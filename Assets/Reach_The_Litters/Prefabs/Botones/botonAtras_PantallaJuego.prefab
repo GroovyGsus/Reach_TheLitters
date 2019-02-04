@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &683808869047101740
+--- !u!1 &1795518079
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,51 +8,51 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 94900396145827039}
-  - component: {fileID: 3696214248998568202}
-  - component: {fileID: 2679107056774914034}
-  - component: {fileID: 2148717690088903099}
+  - component: {fileID: 1795518080}
+  - component: {fileID: 1795518083}
+  - component: {fileID: 1795518082}
+  - component: {fileID: 1795518081}
   m_Layer: 5
-  m_Name: botonAjustes
+  m_Name: botonAtras_PantallaJuego
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &94900396145827039
+--- !u!224 &1795518080
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 683808869047101740}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 1795518079}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.0107, y: 3.0107, z: 3.0107}
+  m_LocalScale: {x: 2.89951, y: 2.89951, z: 2.89951}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 152, y: -488}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 208, y: 520}
+  m_SizeDelta: {x: 38.1, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &3696214248998568202
+--- !u!222 &1795518083
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 683808869047101740}
+  m_GameObject: {fileID: 1795518079}
   m_CullTransparentMesh: 0
---- !u!114 &2679107056774914034
+--- !u!114 &1795518082
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 683808869047101740}
+  m_GameObject: {fileID: 1795518079}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -66,7 +66,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4c98efaf49fe6f34393fc509a2a23244, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4fdbec76e73855043b4532feeceab4ea, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -75,13 +75,13 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &2148717690088903099
+--- !u!114 &1795518081
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 683808869047101740}
+  m_GameObject: {fileID: 1795518079}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -111,13 +111,13 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 2679107056774914034}
+  m_TargetGraphic: {fileID: 1795518082}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 198614352248641157, guid: 1c349d5b6f4868c469b87b17fec43acd,
           type: 3}
-        m_MethodName: CargarPantallaOpciones
+        m_MethodName: CargarPantallaJuego
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
