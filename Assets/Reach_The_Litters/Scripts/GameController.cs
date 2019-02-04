@@ -28,7 +28,7 @@ public class GameController : MonoBehaviour
         nivelesM1[nivel] = true;
     }
 
-    public void CargarMenu()
+    public void CargarSeleccionMundo()
     {
         SceneManager.LoadScene("Seleccion_Mundo");
     }
@@ -56,6 +56,16 @@ public class GameController : MonoBehaviour
     public void CargarM1N4()
     {
         SceneManager.LoadScene("M1N4");
+    }
+
+    public void CargarPantallaPrincipal()
+    {
+        SceneManager.LoadScene("PantallaPrincipal");
+    }
+
+    public void CargarPantallaOpciones()
+    {
+        SceneManager.LoadScene("PantallaOpciones");
     }
 
 }
