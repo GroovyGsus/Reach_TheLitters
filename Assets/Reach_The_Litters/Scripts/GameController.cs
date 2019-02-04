@@ -28,8 +28,49 @@ public class GameController : MonoBehaviour
         nivelesM1[nivel] = true;
     }
 
-    public void CargarMenu()
+    public void CargarSeleccionMundo()
     {
         SceneManager.LoadScene("Seleccion_Mundo");
     }
+
+    public void CargarSelecNivelesM1()
+    {
+        SceneManager.LoadScene("SelecNivelM1");
+    }
+
+    public void CargarM1N1()
+    {
+        SceneManager.LoadScene("M1N1");
+    }
+
+    public void CargarM1N2()
+    {
+        SceneManager.LoadScene("M1N2");
+    }
+
+    public void CargarM1N3()
+    {
+        SceneManager.LoadScene("M1N3");
+    }
+
+    public void CargarM1N4()
+    {
+        SceneManager.LoadScene("M1N4");
+    }
+
+    public void CargarPantallaPrincipal()
+    {
+        SceneManager.LoadScene("PantallaPrincipal");
+    }
+
+    public void CargarPantallaOpciones()
+    {
+        SceneManager.LoadScene("PantallaOpciones");
+    }
+
+    public void CargarPantallaJuego()
+    {
+        SceneManager.LoadScene("PantallaJuego");
+    }
+
 }
