@@ -37,4 +37,25 @@ public class GameController : MonoBehaviour
     {
         SceneManager.LoadScene("SelecNivelM1");
     }
+
+    public void CargarM1N1()
+    {
+        SceneManager.LoadScene("M1N1");
+    }
+
+    public void CargarM1N2()
+    {
+        SceneManager.LoadScene("M1N2");
+    }
+
+    public void CargarM1N3()
+    {
+        SceneManager.LoadScene("M1N3");
+    }
+
+    public void CargarM1N4()
+    {
+        SceneManager.LoadScene("M1N4");
+    }
+
 }
