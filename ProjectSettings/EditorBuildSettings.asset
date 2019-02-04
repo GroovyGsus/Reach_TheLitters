@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Reach_The_Litters/Scenes/Mundo1/M1N4.unity
     guid: 781f28513efc1d847998e3222697f476
+  - enabled: 1
+    path: Assets/Reach_The_Litters/Scenes/PantallaPrincipal.unity
+    guid: 590901b9c323e3943b8f47f853a39e45
   m_configObjects: {}
