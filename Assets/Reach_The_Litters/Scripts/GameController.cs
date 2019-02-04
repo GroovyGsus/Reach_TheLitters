@@ -32,4 +32,9 @@ public class GameController : MonoBehaviour
     {
         SceneManager.LoadScene("Seleccion_Mundo");
     }
+
+    public void CargarSelecNivelesM1()
+    {
+        SceneManager.LoadScene("SelecNivelM1");
+    }
 }
