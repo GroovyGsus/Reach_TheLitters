@@ -36,6 +36,6 @@ EditorBuildSettings:
     path: Assets/Reach_The_Litters/Scenes/PantallaOpciones.unity
     guid: 1a19aa821c1a3694a97fc9deb2f4e4c7
   - enabled: 1
-    path: Assets/Reach_The_Litters/Scenes/PantallaJuego.unity
+    path: Assets/Reach_The_Litters/Scenes/PantallaInicio.unity
     guid: 0350bf28d17e63f4393a3f98e90ac640
   m_configObjects: {}
