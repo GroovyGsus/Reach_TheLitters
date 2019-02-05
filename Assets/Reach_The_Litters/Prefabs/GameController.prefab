@@ -44,3 +44,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nivelesM1: 
+  panelSelector: {fileID: 0}
+  panelTickets: {fileID: 0}
+  cartelMundos: {fileID: 0}
