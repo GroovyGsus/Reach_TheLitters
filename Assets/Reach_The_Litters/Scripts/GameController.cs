@@ -11,6 +11,9 @@ public class GameController : MonoBehaviour
 
 
     public Animator panelSelector;
+    public Animator panelTickets;
+    public Animator cartelMundos;
+    int mundo = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -69,14 +72,24 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene("PantallaOpciones");
     }
 
-    public void CargarPantallaInicio()
+    public void CargarPantallaJuego()
     {
         SceneManager.LoadScene("PantallaInicio");
     }
 
-    public void ElegirMundos()
+    public void SiguienteMundo()
     {
-        panelSelector.SetInteger("Mundo", 1);
+        mundo++;
+        panelSelector.SetInteger("Mundo", mundo);
+        panelTickets.SetInteger("Mundo", mundo);
+        cartelMundos.SetInteger("Mundo", mundo);
     }
 
+    public void AnteriorMundo()
+    {
+        mundo--;
+        panelSelector.SetInteger("Mundo", mundo);
+        panelTickets.SetInteger("Mundo", mundo);
+        cartelMundos.SetInteger("Mundo", mundo);
+    }
 }
