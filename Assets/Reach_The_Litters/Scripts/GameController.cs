@@ -12,18 +12,25 @@ public class GameController : MonoBehaviour
 
     public Animator panelSelector;
 
-    // Start is called before the first frame update
-    void Start()
+  
+
+
+    public void Pausa()
     {
-        
+        if (Time.timeScale == 1)
+        {    //si la velocidad es 1
+            Time.timeScale = 0;     //que la velocidad del juego sea 0
+        }
+        else if (Time.timeScale == 0)
+        {   // si la velocidad es 0
+            Time.timeScale = 1;     // que la velocidad del juego regrese a 1
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Reinicio()
     {
-        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-
     public void DesbloquearNivel(int nivel)
     {
         nivelesM1[nivel] = true;
