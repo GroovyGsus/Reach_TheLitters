@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour
     public bool[] nivelesM1;
 
 
+    public Animator panelSelector;
 
     // Start is called before the first frame update
     void Start()
@@ -68,9 +69,14 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene("PantallaOpciones");
     }
 
-    public void CargarPantallaJuego()
+    public void CargarPantallaInicio()
     {
-        SceneManager.LoadScene("PantallaJuego");
+        SceneManager.LoadScene("PantallaInicio");
+    }
+
+    public void ElegirMundos()
+    {
+        panelSelector.SetInteger("Mundo", 1);
     }
 
 }
