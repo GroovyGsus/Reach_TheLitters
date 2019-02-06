@@ -86,17 +86,25 @@ public class GameController : MonoBehaviour
 
     public void SiguienteMundo()
     {
-        mundo++;
-        panelSelector.SetInteger("Mundo", mundo);
-        panelTickets.SetInteger("Mundo", mundo);
-        cartelMundos.SetInteger("Mundo", mundo);
+        if (mundo <3)
+        {
+            mundo++;
+            panelSelector.SetInteger("Mundo", mundo);
+            panelTickets.SetInteger("Mundo", mundo);
+            cartelMundos.SetInteger("Mundo", mundo);
+        }
+        
     }
 
     public void AnteriorMundo()
     {
-        mundo--;
-        panelSelector.SetInteger("Mundo", mundo);
-        panelTickets.SetInteger("Mundo", mundo);
-        cartelMundos.SetInteger("Mundo", mundo);
+        if (mundo >1)
+        {
+            mundo--;
+            panelSelector.SetInteger("Mundo", mundo);
+            panelTickets.SetInteger("Mundo", mundo);
+            cartelMundos.SetInteger("Mundo", mundo);
+        }
+        
     }
 }
