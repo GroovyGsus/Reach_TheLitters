@@ -79,7 +79,7 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene("PantallaOpciones");
     }
 
-    public void CargarPantallaJuego()
+    public void CargarPantallaInicio()
     {
         SceneManager.LoadScene("PantallaInicio");
     }
