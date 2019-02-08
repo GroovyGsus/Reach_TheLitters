@@ -18,7 +18,7 @@ public class GameController : MonoBehaviour
     public Animator ticketM1;
 
     public AudioSource sonidoCogerLlave;
-    public AudioSource sonidoRomperTicket;
+    
 
     public void Pausa()
     {
@@ -48,7 +48,6 @@ public class GameController : MonoBehaviour
 
     public void CargarSelecNivelesM1()
     {
-        sonidoRomperTicket.Play();
 
         Invoke("CargarNivelesM1", 0.5f);
     }

@@ -260,15 +260,25 @@ MonoBehaviour:
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
+    m_PressedTrigger: anim_boton_ticket_M1
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 9091136772036176496}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 198614352248641157, guid: 1c349d5b6f4868c469b87b17fec43acd,
-          type: 3}
+      - m_Target: {fileID: 960076867}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: romper
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
         m_MethodName: CargarSelecNivelesM1
         m_Mode: 1
         m_Arguments:
