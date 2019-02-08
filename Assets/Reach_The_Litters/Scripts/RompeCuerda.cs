@@ -8,7 +8,8 @@ public class RompeCuerda : MonoBehaviour
     HingeJoint2D jointCuerda;
     SpriteRenderer sr;
     LineRenderer lr;
-    bool conectado = true; 
+    bool conectado = true;
+    public AudioClip sonidoRomperCuerda;
 
     // Start is called before the first frame update
     void Start()
@@ -36,11 +37,17 @@ public class RompeCuerda : MonoBehaviour
 
         if (col.gameObject.tag == "Mouse" && Input.GetMouseButton(0))
         {
+            
             conectado = false; 
             //gameObject.GetComponent<HingeJoint2D>();
             Destroy(jointCuerda);
             Destroy(lr);
             Destroy(sr);
+            AudioSource.PlayClipAtPoint(sonidoRomperCuerda, transform.position);
         }
+        
+           
+        
+
     }
 }
