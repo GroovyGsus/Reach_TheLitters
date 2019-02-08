@@ -18,7 +18,7 @@ public class SonidoMady : MonoBehaviour
         if (piar)
         {
             piar = false;
-            Invoke("Piar", Random.Range(2,5));
+            Invoke("Piar", Random.Range(5,15));
         }
     }
 
