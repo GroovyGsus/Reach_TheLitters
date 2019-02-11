@@ -13,26 +13,31 @@ public class GameController : MonoBehaviour
     public Animator panelSelector;
     public Animator panelTickets;
     public Animator cartelMundos;
+    public Animator MenuPausa;
     int mundo = 1;
 
 
-    public AudioSource sonidoCogerLlave; 
+    public AudioSource sonidoCogerLlave;
+
+    private bool pausaDesactivada = true;
 
     public void Pausa()
     {
-        if (Time.timeScale == 1)
-        {    //si la velocidad es 1
-            Time.timeScale = 0;     //que la velocidad del juego sea 0
-        }
-        else if (Time.timeScale == 0)
-        {   // si la velocidad es 0
-            Time.timeScale = 1;     // que la velocidad del juego regrese a 1
-        }
+        MenuPausa.SetBool("Pausa", pausaDesactivada);
+
+        if (pausaDesactivada)
+            Time.timeScale = 0;
+        else
+            Time.timeScale = 1;
+
+        pausaDesactivada = !pausaDesactivada;
+        Debug.Log("Pausado!");
     }
 
     public void Reinicio()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1;
     }
     public void DesbloquearNivel(int nivel)
     {
