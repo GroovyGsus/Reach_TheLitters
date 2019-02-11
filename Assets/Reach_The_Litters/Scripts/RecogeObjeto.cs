@@ -7,10 +7,12 @@ public class RecogeObjeto : MonoBehaviour
     Rigidbody2D rbObjeto;
     GameObject objeto;
     bool llevaObjeto = false;
+    public Transform patas;
+    PathFollow pf;
     // Start is called before the first frame update
     void Start()
     {
-
+        pf = GetComponent<PathFollow>();
     }
 
     // Update is called once per frame
@@ -26,6 +28,7 @@ public class RecogeObjeto : MonoBehaviour
 
             llevaObjeto = true;
             col.transform.parent = transform;
+            col.transform.position = patas.position;
             objeto = col.gameObject;
             rbObjeto = col.gameObject.GetComponent<Rigidbody2D>();
             rbObjeto.isKinematic = true;
@@ -37,7 +40,7 @@ public class RecogeObjeto : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (llevaObjeto)
+        if (llevaObjeto && pf.pinchado)
         {
             rbObjeto.isKinematic = false;
             objeto.transform.parent = null;
