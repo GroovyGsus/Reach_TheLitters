@@ -15,8 +15,10 @@ public class GameController : MonoBehaviour
     public Animator cartelMundos;
     int mundo = 1;
 
+    public Animator ticketM1;
 
-    public AudioSource sonidoCogerLlave; 
+    public AudioSource sonidoCogerLlave;
+    
 
     public void Pausa()
     {
@@ -45,6 +47,12 @@ public class GameController : MonoBehaviour
     }
 
     public void CargarSelecNivelesM1()
+    {
+
+        Invoke("CargarNivelesM1", 0.5f);
+    }
+
+    public void CargarNivelesM1()
     {
         SceneManager.LoadScene("SelecNivelM1");
     }

@@ -1,7 +1,12 @@
 fileFormatVersion: 2
 guid: ac9f01d24a53ae547aac12f9d0e38db8
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Mady triste ahora siiiiiiiiiiiiiiiiiiiii_0
+    21300002: Mady triste ahora siiiiiiiiiiiiiiiiiiiii_1
+    21300004: Mady triste ahora siiiiiiiiiiiiiiiiiiiii_2
+    21300006: Mady triste ahora siiiiiiiiiiiiiiiiiiiii_3
+    21300008: Mady triste ahora siiiiiiiiiiiiiiiiiiiii_4
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +45,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +74,131 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Mady triste ahora siiiiiiiiiiiiiiiiiiiii_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 546
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb9c40560799c04ab533e2e415037fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mady triste ahora siiiiiiiiiiiiiiiiiiiii_1
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 0
+        width: 701
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44991977be1425a4c82ba9b2db9553f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mady triste ahora siiiiiiiiiiiiiiiiiiiii_2
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 0
+        width: 857
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e165e19ec684ed4f952f64b7404ea2e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mady triste ahora siiiiiiiiiiiiiiiiiiiii_3
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 0
+        width: 355
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86dadea1755636143b43b2cf8098e364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mady triste ahora siiiiiiiiiiiiiiiiiiiii_4
+      rect:
+        serializedVersion: 2
+        x: 3508
+        y: 0
+        width: 337
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ab1a8b53090374aaf5f10eaa878294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

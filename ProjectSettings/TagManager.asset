@@ -8,6 +8,8 @@ TagManager:
   - Mouse
   - Llave
   - Piedras
+  - Huevo
+  - Area_Juego
   layers:
   - Default
   - TransparentFX

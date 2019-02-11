@@ -2,28 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RecogerHuevo : MonoBehaviour
+public class NivelFallido : MonoBehaviour
 {
-    AudioSource sonido;
-
-
+    // Start is called before the first frame update
     void Start()
     {
-        sonido = GetComponent<AudioSource>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-      
+        
     }
+
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Area_Juego")
         {
-            Destroy(gameObject);
-            sonido.Play();
+         
+           
         }
-          
+
     }
+
+
+
 }
+

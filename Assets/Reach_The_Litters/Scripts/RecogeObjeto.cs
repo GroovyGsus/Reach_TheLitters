@@ -7,10 +7,13 @@ public class RecogeObjeto : MonoBehaviour
     Rigidbody2D rbObjeto;
     GameObject objeto;
     bool llevaObjeto = false;
+
+    AudioSource sonidoTuit;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        sonidoTuit = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -37,6 +40,8 @@ public class RecogeObjeto : MonoBehaviour
 
     private void OnMouseDown()
     {
+        sonidoTuit.Play();
+
         if (llevaObjeto)
         {
             rbObjeto.isKinematic = false;

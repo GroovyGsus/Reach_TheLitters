@@ -16,8 +16,8 @@ public class llaveRecogida : MonoBehaviour
         if (col.gameObject.tag == "Huevo" || col.gameObject.tag == "Player")
 
         {
-            GameObject gameController = GameObject.FindGameObjectWithTag("GameController");
-            gameController.GetComponent<GameController>().SonidoCogerLlave();
+            //GameObject gameController = GameObject.FindGameObjectWithTag("GameController");
+            //gameController.GetComponent<GameController>().SonidoCogerLlave();
 
             GameController.llaves++;
             Debug.Log("EUREKA! Ya tengo "+ GameController.llaves );

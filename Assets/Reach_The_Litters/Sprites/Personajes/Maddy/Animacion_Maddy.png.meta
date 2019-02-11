@@ -108,7 +108,7 @@ TextureImporter:
         width: 416
         height: 248
       alignment: 9
-      pivot: {x: 0.75508183, y: 0.5042789}
+      pivot: {x: 0.75018173, y: 0.49331924}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -128,7 +128,7 @@ TextureImporter:
         width: 342
         height: 248
       alignment: 9
-      pivot: {x: 0.6768567, y: 0.5213941}
+      pivot: {x: 0.7063315, y: 0.5167751}
       border: {x: 1, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -143,12 +143,12 @@ TextureImporter:
       name: Animacion_Maddy_2
       rect:
         serializedVersion: 2
-        x: 768
+        x: 767
         y: 0
         width: 315
         height: 248
       alignment: 9
-      pivot: {x: 0.62464195, y: 0.5042789}
+      pivot: {x: 0.61493504, y: 0.5036624}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -167,8 +167,8 @@ TextureImporter:
         y: 0
         width: 361
         height: 248
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5153978, y: 0.4930441}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -188,7 +188,7 @@ TextureImporter:
         width: 361
         height: 248
       alignment: 9
-      pivot: {x: 0.39124042, y: 0.45721218}
+      pivot: {x: 0.39837697, y: 0.4742116}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
