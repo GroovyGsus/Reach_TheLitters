@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class RecogerHuevo : MonoBehaviour
 {
-   
+    AudioSource sonido;
+
+
+    void Start()
+    {
+        sonido = GetComponent<AudioSource>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -16,6 +22,7 @@ public class RecogerHuevo : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Destroy(gameObject);
+            sonido.Play();
         }
           
     }
