@@ -7,22 +7,15 @@ public class RecogeObjeto : MonoBehaviour
     Rigidbody2D rbObjeto;
     GameObject objeto;
     bool llevaObjeto = false;
-<<<<<<< HEAD
     public Transform patas;
     PathFollow pf;
+    AudioSource sonidoTuit;
     // Start is called before the first frame update
     void Start()
     {
         pf = GetComponent<PathFollow>();
-=======
-
-    AudioSource sonidoTuit;
-
-    // Start is called before the first frame update
-    void Start()
-    {
         sonidoTuit = GetComponent<AudioSource>();
->>>>>>> b761985344d9b7152176de8222260bd4ec0ba9ba
+
     }
 
     // Update is called once per frame
@@ -50,14 +43,10 @@ public class RecogeObjeto : MonoBehaviour
 
     private void OnMouseDown()
     {
-<<<<<<< HEAD
         if (llevaObjeto && pf.pinchado)
-=======
-        sonidoTuit.Play();
 
-        if (llevaObjeto)
->>>>>>> b761985344d9b7152176de8222260bd4ec0ba9ba
         {
+            sonidoTuit.Play();
             rbObjeto.isKinematic = false;
             objeto.transform.parent = null;
             llevaObjeto = false;

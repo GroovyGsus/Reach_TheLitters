@@ -13,11 +13,8 @@ GameObject:
   - component: {fileID: 6223923971680027666}
   - component: {fileID: 6223923971680027665}
   - component: {fileID: 6223923971680027679}
-<<<<<<< HEAD
   - component: {fileID: 6223923971680027678}
-=======
-  - component: {fileID: 2044146225}
->>>>>>> b761985344d9b7152176de8222260bd4ec0ba9ba
+  - component: {fileID: 6482328204887232603}
   m_Layer: 0
   m_Name: Tuit
   m_TagString: Untagged
@@ -134,19 +131,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176491fd854d2aa45b7a465318fe8ffa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   patas: {fileID: 0}
 --- !u!114 &6223923971680027678
-=======
-  velocidad: 5
-  targets:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  pinchado: 0
---- !u!114 &6223923971680027679
->>>>>>> b761985344d9b7152176de8222260bd4ec0ba9ba
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,7 +144,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64f42eaf6db9f174eac5f3619794baf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   velocidad: 5
   targets:
   - {fileID: 0}
@@ -166,8 +151,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   pinchado: 0
-=======
---- !u!82 &2044146225
+--- !u!82 &6482328204887232603
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -177,8 +161,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b95f90d248fa5b64f90b6abcbbbed1bb, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -263,4 +247,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
->>>>>>> b761985344d9b7152176de8222260bd4ec0ba9ba

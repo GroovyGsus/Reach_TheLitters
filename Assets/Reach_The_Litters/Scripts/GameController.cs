@@ -20,12 +20,10 @@ public class GameController : MonoBehaviour
     public Animator ticketM1;
 
     public AudioSource sonidoCogerLlave;
-<<<<<<< HEAD
+
 
     private bool pausaDesactivada = true;
-=======
-    
->>>>>>> b761985344d9b7152176de8222260bd4ec0ba9ba
+
 
     public void Pausa()
     {

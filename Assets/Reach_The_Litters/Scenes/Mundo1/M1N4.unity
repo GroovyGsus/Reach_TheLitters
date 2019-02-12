@@ -3689,7 +3689,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_MatchWidthOrHeight
       value: 1
-<<<<<<< HEAD
       objectReference: {fileID: 0}
     - target: {fileID: 7453442394124257388, guid: c3a3400d906feb345b6976036d756c4d,
         type: 3}
@@ -3803,8 +3802,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RaycastTarget
       value: 0
-=======
->>>>>>> b761985344d9b7152176de8222260bd4ec0ba9ba
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3a3400d906feb345b6976036d756c4d, type: 3}
