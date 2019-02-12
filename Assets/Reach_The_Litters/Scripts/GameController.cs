@@ -17,10 +17,15 @@ public class GameController : MonoBehaviour
     //public Animator PanelLlaves;
     int mundo = 1;
 
+    public Animator ticketM1;
 
     public AudioSource sonidoCogerLlave;
+<<<<<<< HEAD
 
     private bool pausaDesactivada = true;
+=======
+    
+>>>>>>> b761985344d9b7152176de8222260bd4ec0ba9ba
 
     public void Pausa()
     {
@@ -51,6 +56,12 @@ public class GameController : MonoBehaviour
     }
 
     public void CargarSelecNivelesM1()
+    {
+
+        Invoke("CargarNivelesM1", 0.5f);
+    }
+
+    public void CargarNivelesM1()
     {
         SceneManager.LoadScene("SelecNivelM1");
     }
@@ -85,7 +96,7 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene("PantallaOpciones");
     }
 
-    public void CargarPantallaJuego()
+    public void CargarPantallaInicio()
     {
         SceneManager.LoadScene("PantallaInicio");
     }

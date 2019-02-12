@@ -9,6 +9,10 @@ TagManager:
   - Llave
   - Piedras
   - Huevo
+<<<<<<< HEAD
+=======
+  - Area_Juego
+>>>>>>> b761985344d9b7152176de8222260bd4ec0ba9ba
   layers:
   - Default
   - TransparentFX
