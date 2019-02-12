@@ -43,7 +43,11 @@ public class RompeCuerda : MonoBehaviour
             Destroy(jointCuerda);
             Destroy(lr);
             Destroy(sr);
-            AudioSource.PlayClipAtPoint(sonidoRomperCuerda, transform.position);
+            if(sonidoRomperCuerda != null)
+            {
+                AudioSource.PlayClipAtPoint(sonidoRomperCuerda, transform.position);
+            }
+            
         }
         
            

@@ -14,7 +14,7 @@ public class GameController : MonoBehaviour
     public Animator panelTickets;
     public Animator cartelMundos;
     public Animator MenuPausa;
-    //public Animator PanelLlaves;
+    public Animator PanelLlaves;
     int mundo = 1;
 
     public Animator ticketM1;
@@ -123,14 +123,19 @@ public class GameController : MonoBehaviour
         
     }
 
-    //public void numerodeLlaves()
-    //{
-    //    PanelLlaves.SetInt("Numllaves");
-    //}
+    public void numerodeLlaves()
+    {
+        PanelLlaves.SetInteger("Numllaves",llaves);
+    }
 
     public void SonidoCogerLlave()
     {
         sonidoCogerLlave.Play();
         Debug.Log("ha sonao bro");
+    }
+
+    void Update ()
+    {
+        numerodeLlaves();
     }
 }

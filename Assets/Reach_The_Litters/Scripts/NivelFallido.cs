@@ -31,6 +31,7 @@ public class NivelFallido : MonoBehaviour
         if (other.gameObject.tag == "Area_Juego")
         {
             anim.SetTrigger("activar");
+            Time.timeScale = 0;
            
         }
 
