@@ -3,9 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NivelFallido : MonoBehaviour
+
 {
+
+    public AudioSource sonidoMadyTriste;
+
     GameObject panelNivelFallido;
+
     Animator anim;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +37,7 @@ public class NivelFallido : MonoBehaviour
         if (other.gameObject.tag == "Area_Juego")
         {
             anim.SetTrigger("activar");
+            sonidoMadyTriste.Play();
             Time.timeScale = 0;
            
         }
