@@ -21,6 +21,8 @@ public class GameController : MonoBehaviour
 
     public AudioSource sonidoCogerLlave;
 
+    
+
 
     private bool pausaDesactivada = true;
 
@@ -133,6 +135,8 @@ public class GameController : MonoBehaviour
         sonidoCogerLlave.Play();
         Debug.Log("ha sonao bro");
     }
+    
+    
 
     void Update ()
     {
