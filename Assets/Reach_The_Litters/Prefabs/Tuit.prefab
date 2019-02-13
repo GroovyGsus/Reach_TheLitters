@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1433430118
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1433430119}
+  m_Layer: 0
+  m_Name: Patas
+  m_TagString: Untagged
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1433430119
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433430118}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.009, y: -0.429, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6223923971680027664}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6223923971680027669
 GameObject:
   m_ObjectHideFlags: 0
@@ -15,6 +45,7 @@ GameObject:
   - component: {fileID: 6223923971680027679}
   - component: {fileID: 6223923971680027678}
   - component: {fileID: 6482328204887232603}
+  - component: {fileID: 1640139770}
   m_Layer: 0
   m_Name: Tuit
   m_TagString: Untagged
@@ -31,8 +62,9 @@ Transform:
   m_GameObject: {fileID: 6223923971680027669}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.74, y: 0.97, z: 0}
-  m_LocalScale: {x: 0.797, y: 0.797, z: 0.797}
-  m_Children: []
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.797}
+  m_Children:
+  - {fileID: 1433430119}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -131,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176491fd854d2aa45b7a465318fe8ffa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patas: {fileID: 0}
+  patas: {fileID: 1433430119}
 --- !u!114 &6223923971680027678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,8 +176,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64f42eaf6db9f174eac5f3619794baf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 5
+  velocidad: 3
   targets:
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -247,3 +281,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!70 &1640139770
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6223923971680027669}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00000065166194, y: -0.533464}
+  m_Size: {x: 1.982966, y: 0.8886775}
+  m_Direction: 1

@@ -15,6 +15,7 @@ public class GameController : MonoBehaviour
     public Animator cartelMundos;
     public Animator MenuPausa;
     public Animator PanelLlaves;
+    public Animator PanelLlavesNivelCompletado;
     int mundo = 1;
 
     public Animator ticketM1;
@@ -125,7 +126,9 @@ public class GameController : MonoBehaviour
 
     public void numerodeLlaves()
     {
-        PanelLlaves.SetInteger("Numllaves",llaves);
+        PanelLlaves.SetInteger("Numllaves", llaves);
+        PanelLlavesNivelCompletado.SetInteger("llavesRecogidas", llaves);
+
     }
 
     public void SonidoCogerLlave()
@@ -137,5 +140,6 @@ public class GameController : MonoBehaviour
     void Update ()
     {
         numerodeLlaves();
+        Debug.Log(llaves);
     }
 }
