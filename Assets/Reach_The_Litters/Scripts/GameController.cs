@@ -139,7 +139,6 @@ public class GameController : MonoBehaviour
         Debug.Log("ha sonao bro");
     }
     
-    
 
     void Update ()
     {

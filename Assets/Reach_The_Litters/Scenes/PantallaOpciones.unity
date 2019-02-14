@@ -281,18 +281,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28435034}
   m_CullTransparentMesh: 0
---- !u!114 &151489035 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4565932245183494328, guid: 1268833f5f4a6e045bb0f979d38628a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 2097815935}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0a4ed81a3d3bba4a8733532c8d0535e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &399381216
 GameObject:
   m_ObjectHideFlags: 0
@@ -1486,7 +1474,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 151489035}
+      - m_Target: {fileID: 0}
+        m_MethodName: SonidoPulsarBoton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5786001505571159874, guid: bd072d7f62d1c99498bc34770f319c69,
+          type: 3}
         m_MethodName: SonidoPulsarBoton
         m_Mode: 1
         m_Arguments:

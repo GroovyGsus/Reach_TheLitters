@@ -204,6 +204,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5786001505571159874, guid: bd072d7f62d1c99498bc34770f319c69,
+          type: 3}
+        m_MethodName: SonidoPulsarBoton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &10690884
@@ -684,6 +696,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5786001505571159874, guid: bd072d7f62d1c99498bc34770f319c69,
+          type: 3}
+        m_MethodName: SonidoPulsarBoton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &439682607
@@ -898,18 +922,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766552528}
   m_CullTransparentMesh: 0
---- !u!114 &869579127 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4565932245183494328, guid: 1268833f5f4a6e045bb0f979d38628a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 351355779}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0a4ed81a3d3bba4a8733532c8d0535e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &913499018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1269,6 +1281,9 @@ MonoBehaviour:
   panelSelector: {fileID: 0}
   panelTickets: {fileID: 0}
   cartelMundos: {fileID: 0}
+  MenuPausa: {fileID: 0}
+  PanelLlaves: {fileID: 0}
+  PanelLlavesNivelCompletado: {fileID: 0}
   ticketM1: {fileID: 0}
   sonidoCogerLlave: {fileID: 0}
 --- !u!4 &1129880104
@@ -2010,6 +2025,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5786001505571159874, guid: bd072d7f62d1c99498bc34770f319c69,
+          type: 3}
+        m_MethodName: SonidoPulsarBoton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1924584367
@@ -2215,6 +2242,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5786001505571159874, guid: bd072d7f62d1c99498bc34770f319c69,
+          type: 3}
+        m_MethodName: SonidoPulsarBoton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1976254727
@@ -2368,7 +2407,8 @@ PrefabInstance:
     - target: {fileID: 1795518081, guid: 9395e1f3af1e9d9479d880ae615cd155, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 869579127}
+      objectReference: {fileID: 5786001505571159874, guid: bd072d7f62d1c99498bc34770f319c69,
+        type: 3}
     - target: {fileID: 1795518081, guid: 9395e1f3af1e9d9479d880ae615cd155, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: SonidoPulsarBoton
@@ -2620,6 +2660,37 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2148717690088903099, guid: 28beb32f1252b514b96828a8c8efbe4c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2148717690088903099, guid: 28beb32f1252b514b96828a8c8efbe4c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2148717690088903099, guid: 28beb32f1252b514b96828a8c8efbe4c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2148717690088903099, guid: 28beb32f1252b514b96828a8c8efbe4c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5786001505571159874, guid: bd072d7f62d1c99498bc34770f319c69,
+        type: 3}
+    - target: {fileID: 2148717690088903099, guid: 28beb32f1252b514b96828a8c8efbe4c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SonidoPulsarBoton
+      objectReference: {fileID: 0}
+    - target: {fileID: 2148717690088903099, guid: 28beb32f1252b514b96828a8c8efbe4c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28beb32f1252b514b96828a8c8efbe4c, type: 3}

@@ -7,12 +7,17 @@ public class SelectorSonidosCamara : MonoBehaviour
 
     public AudioClip pulsarTicket;
     public AudioClip pulsarBoton;
+    public AudioClip musicaMenu;
     AudioSource audCam;
 
     // Start is called before the first frame update
     void Start()
     {
         audCam = GetComponent<AudioSource>();
+
+        audCam.clip = musicaMenu;
+        audCam.Play();
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
@@ -25,6 +30,7 @@ public class SelectorSonidosCamara : MonoBehaviour
     {
         audCam.clip = pulsarBoton;
         audCam.Play();
+        Destroy(gameObject, audCam.clip.length);
     }
 
     public void SonidoPulsarTicket()
@@ -32,6 +38,7 @@ public class SelectorSonidosCamara : MonoBehaviour
         audCam.clip = pulsarTicket;
         audCam.Play();
     }
+    
 
-
+    
 }
