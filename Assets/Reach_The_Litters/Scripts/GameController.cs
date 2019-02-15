@@ -128,8 +128,10 @@ public class GameController : MonoBehaviour
 
     public void numerodeLlaves()
     {
+        if(PanelLlaves!= null) { 
         PanelLlaves.SetInteger("Numllaves", llaves);
         PanelLlavesNivelCompletado.SetInteger("llavesRecogidas", llaves);
+        }
 
     }
 
