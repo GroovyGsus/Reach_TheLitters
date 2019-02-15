@@ -53,56 +53,65 @@ public class GameController : MonoBehaviour
 
     public void CargarSeleccionMundo()
     {
+        SelectorMusicaFondo.instancia.suenaMusicaMenu = true;
         SceneManager.LoadScene("Seleccion_Mundo");
     }
 
     public void CargarSelecNivelesM1()
     {
-
+        SelectorMusicaFondo.instancia.suenaMusicaMenu = true;
         Invoke("CargarNivelesM1", 0.5f);
     }
 
     public void CargarNivelesM1()
     {
+        
         SceneManager.LoadScene("SelecNivelM1");
     }
 
     public void CargarM1N1()
     {
+        SelectorMusicaFondo.instancia.suenaMusicaMenu = false;
         SceneManager.LoadScene("M1N1");
         Time.timeScale = 1;
     }
 
     public void CargarM1N2()
     {
+        SelectorMusicaFondo.instancia.suenaMusicaMenu = false;
         SceneManager.LoadScene("M1N2");
         Time.timeScale = 1;
     }
 
     public void CargarM1N3()
     {
+        SelectorMusicaFondo.instancia.suenaMusicaMenu = false;
         SceneManager.LoadScene("M1N3");
         Time.timeScale = 1;
     }
 
     public void CargarM1N4()
     {
+        SelectorMusicaFondo.instancia.suenaMusicaMenu = false;
         SceneManager.LoadScene("M1N4");
         Time.timeScale = 1;
     }
 
     public void CargarPantallaPrincipal()
     {
+        SelectorMusicaFondo.instancia.suenaMusicaMenu = true;
         SceneManager.LoadScene("PantallaPrincipal");
     }
 
     public void CargarPantallaOpciones()
     {
+        SelectorMusicaFondo.instancia.suenaMusicaMenu = true;
         SceneManager.LoadScene("PantallaOpciones");
     }
 
     public void CargarPantallaInicio()
     {
+        SelectorMusicaFondo.instancia.suenaMusicaMenu = true;
         SceneManager.LoadScene("PantallaInicio");
     }
 
