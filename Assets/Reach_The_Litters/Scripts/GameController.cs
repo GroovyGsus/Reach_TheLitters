@@ -70,21 +70,25 @@ public class GameController : MonoBehaviour
     public void CargarM1N1()
     {
         SceneManager.LoadScene("M1N1");
+        Time.timeScale = 1;
     }
 
     public void CargarM1N2()
     {
         SceneManager.LoadScene("M1N2");
+        Time.timeScale = 1;
     }
 
     public void CargarM1N3()
     {
         SceneManager.LoadScene("M1N3");
+        Time.timeScale = 1;
     }
 
     public void CargarM1N4()
     {
         SceneManager.LoadScene("M1N4");
+        Time.timeScale = 1;
     }
 
     public void CargarPantallaPrincipal()
