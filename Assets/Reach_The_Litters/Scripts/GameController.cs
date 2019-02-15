@@ -43,6 +43,8 @@ public class GameController : MonoBehaviour
 
     public void Reinicio()
     {
+        llaves = 0;
+        PanelLlavesNivelCompletado.SetInteger("llavesRecogidas", llaves);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1;
     }
@@ -74,6 +76,7 @@ public class GameController : MonoBehaviour
         SelectorMusicaFondo.instancia.suenaMusicaMenu = false;
         SceneManager.LoadScene("M1N1");
         Time.timeScale = 1;
+        llaves = 0;
     }
 
     public void CargarM1N2()
@@ -81,6 +84,7 @@ public class GameController : MonoBehaviour
         SelectorMusicaFondo.instancia.suenaMusicaMenu = false;
         SceneManager.LoadScene("M1N2");
         Time.timeScale = 1;
+        llaves = 0;
     }
 
     public void CargarM1N3()
@@ -88,6 +92,7 @@ public class GameController : MonoBehaviour
         SelectorMusicaFondo.instancia.suenaMusicaMenu = false;
         SceneManager.LoadScene("M1N3");
         Time.timeScale = 1;
+        llaves = 0;
     }
 
     public void CargarM1N4()
@@ -95,6 +100,7 @@ public class GameController : MonoBehaviour
         SelectorMusicaFondo.instancia.suenaMusicaMenu = false;
         SceneManager.LoadScene("M1N4");
         Time.timeScale = 1;
+        llaves = 0;
     }
 
     public void CargarPantallaPrincipal()
