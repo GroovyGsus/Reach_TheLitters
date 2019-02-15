@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8905406004834622296}
   - component: {fileID: 4408664110189097994}
   - component: {fileID: 6870783155958398695}
+  - component: {fileID: 4748524195960860998}
   m_Layer: 0
   m_Name: piedra
   m_TagString: Untagged
@@ -149,3 +150,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4748524195960860998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727821706090472586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32e1b56c1cb97d4ea79c5d8b6db06cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

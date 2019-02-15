@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4110447507603900925}
   - component: {fileID: 4110447507603900924}
+  - component: {fileID: 1502831305}
   m_Layer: 0
   m_Name: Area_Juego
   m_TagString: Area_Juego
@@ -52,3 +53,15 @@ EdgeCollider2D:
   - {x: -4.282008, y: -6.256682}
   - {x: -4.2830815, y: 6.2992544}
   - {x: 4.3060536, y: 6.3434215}
+--- !u!114 &1502831305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4110447507603900915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32e1b56c1cb97d4ea79c5d8b6db06cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
