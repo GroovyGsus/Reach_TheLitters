@@ -8,16 +8,35 @@ public class SelectorSonidosCamara : MonoBehaviour
     public AudioClip pulsarTicket;
     public AudioClip pulsarBoton;
     public AudioClip musicaMenu;
-    AudioSource audCam;
+    public AudioSource audCam;
+
+    public static SelectorSonidosCamara instancia;
+
+    private void Awake()
+    {
+        
+        if (instancia == null)
+        {
+            instancia = this;
+        }
+
+        else if (instancia != this)
+        {
+            Destroy(gameObject);
+        }
+       
+        DontDestroyOnLoad(gameObject);
+
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        audCam = GetComponent<AudioSource>();
 
-        audCam.clip = musicaMenu;
-        audCam.Play();
-        DontDestroyOnLoad(gameObject);
+        SelectorSonidosCamara.instancia.audCam = GetComponent<AudioSource>();
+        SelectorSonidosCamara.instancia.audCam.clip = musicaMenu;
+        SelectorSonidosCamara.instancia.audCam.Play();
+        
     }
 
     // Update is called once per frame
@@ -28,15 +47,17 @@ public class SelectorSonidosCamara : MonoBehaviour
 
     public void SonidoPulsarBoton()
     {
-        audCam.clip = pulsarBoton;
-        audCam.Play();
-        Destroy(gameObject, audCam.clip.length);
+        
+        SelectorSonidosCamara.instancia.audCam.clip = pulsarBoton;
+        SelectorSonidosCamara.instancia.audCam.Play();
+        
+        Debug.Log("ha sonadoo");
     }
 
     public void SonidoPulsarTicket()
     {
-        audCam.clip = pulsarTicket;
-        audCam.Play();
+        SelectorSonidosCamara.instancia.audCam.clip = pulsarTicket;
+        SelectorSonidosCamara.instancia.audCam.Play();
     }
     
 
