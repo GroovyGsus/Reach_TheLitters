@@ -43,6 +43,8 @@ public class GameController : MonoBehaviour
 
     public void Reinicio()
     {
+        llaves = 0;
+        PanelLlavesNivelCompletado.SetInteger("llavesRecogidas", llaves);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1;
     }
