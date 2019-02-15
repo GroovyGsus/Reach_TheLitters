@@ -94,6 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17461489fb50d604d8b15270d673d98b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoRomperCuerda: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
 --- !u!70 &426965435
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -349,7 +350,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0.33200002}
+  m_ConnectedAnchor: {x: -0.7841662, y: -1.3962231}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -465,6 +466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17461489fb50d604d8b15270d673d98b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoRomperCuerda: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
 --- !u!212 &713589411
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -717,6 +719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17461489fb50d604d8b15270d673d98b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoRomperCuerda: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
 --- !u!212 &862630636
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -969,6 +972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17461489fb50d604d8b15270d673d98b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoRomperCuerda: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
 --- !u!212 &1488768103
 SpriteRenderer:
   m_ObjectHideFlags: 0

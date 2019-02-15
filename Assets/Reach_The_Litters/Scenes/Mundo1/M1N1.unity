@@ -983,6 +983,56 @@ PrefabInstance:
       propertyPath: m_ConnectedRigidBody
       value: 
       objectReference: {fileID: 777703984}
+    - target: {fileID: 3654152457005605971, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.027334906
+      objectReference: {fileID: 0}
+    - target: {fileID: 3654152457005605971, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.66742563
+      objectReference: {fileID: 0}
+    - target: {fileID: 986775955722940041, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.059999228
+      objectReference: {fileID: 0}
+    - target: {fileID: 986775955722940041, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 6.680002
+      objectReference: {fileID: 0}
+    - target: {fileID: 3657481908118208133, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 6.819997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1535482437325772895, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
+    - target: {fileID: 2568310264250720808, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.020000935
+      objectReference: {fileID: 0}
+    - target: {fileID: 2568310264250720808, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 6.659999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249723086332323584, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 6.7400026
+      objectReference: {fileID: 0}
+    - target: {fileID: 7214419235010504395, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 6.739998
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f4211dd17896904898d693b0f7cbeaa, type: 3}
 --- !u!1001 &1322253859
