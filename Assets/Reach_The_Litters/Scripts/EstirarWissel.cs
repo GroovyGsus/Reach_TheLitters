@@ -8,6 +8,8 @@ public class EstirarWissel : MonoBehaviour
     Rigidbody2D wis;
     public float speed=2;
 
+    bool pulsado = false;
+
     //Declaramos 2 variables, una que dice cuando se creará el prox objeto vacío 
     //y otra para cuanto esperaremos a crear el proximo (esta última pública, para poder cambiarla desde el editor)
     public float velCol = 2;
@@ -19,15 +21,24 @@ public class EstirarWissel : MonoBehaviour
     void Start()
     {
         wis = GetComponent<Rigidbody2D>();
+        pulsado = false;
     }
 
     void Update()
     {
         //Aqui hacemos que cuando pulsamos la serpiente empiece a crecer
-        if (Input.GetMouseButton(0))
+        if (pulsado == false)
         {
-            wis.velocity = new Vector2(speed, speed);          
+            if (Input.GetMouseButton(0))
+            {
+                pulsado = true;
+                wis.bodyType = RigidbodyType2D.Dynamic;
+                wis.velocity = new Vector2(speed, speed);
+            }
         }
+        
+        
+        
 
         //Aqui hacemos que si la serpiente está creciendo, genere los objetos vacios que tendran el collider 
         if(wis.velocity.magnitude > 0)
@@ -47,7 +58,8 @@ public class EstirarWissel : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Escenario"))
         {
-            wis.bodyType = RigidbodyType2D.Static;          
+            wis.bodyType = RigidbodyType2D.Static;
+            pulsado = false;
         }
     }
 }

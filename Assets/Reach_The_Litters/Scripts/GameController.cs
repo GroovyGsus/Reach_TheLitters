@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -22,10 +23,35 @@ public class GameController : MonoBehaviour
 
     public AudioSource sonidoCogerLlave;
 
-    
-
-
     private bool pausaDesactivada = true;
+
+    //Cosas para desbloquear los niveles
+    public Button[] BotonesM1;
+
+    public int nextLvl = 0;
+
+    void Start()
+    {
+        int lvlUnlock = PlayerPrefs.GetInt("lvlUnlock", 0);
+
+        for (int i = 0; i < BotonesM1.Length; i++)
+        {
+            if (i > lvlUnlock)
+            {
+                BotonesM1[i].interactable = false;
+            }
+        }
+    }
+
+    public void PasarNivel()
+    {
+        if (nextLvl < 4)
+        {
+            nextLvl++;
+            PlayerPrefs.SetInt("lvlUnlock", nextLvl);
+        }
+
+    }
 
 
     public void Pausa()
@@ -48,6 +74,7 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1;
     }
+
     public void DesbloquearNivel(int nivel)
     {
         nivelesM1[nivel] = true;

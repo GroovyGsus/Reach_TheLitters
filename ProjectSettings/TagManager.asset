@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Area_Juego
   - Huevo
+  - Mouse
+  - Llave
+  - Escenario
   layers:
   - Default
   - TransparentFX
