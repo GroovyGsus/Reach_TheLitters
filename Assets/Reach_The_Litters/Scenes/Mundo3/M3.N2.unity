@@ -1051,6 +1051,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Pausa
       objectReference: {fileID: 0}
+    - target: {fileID: 4333687378472029769, guid: 3d607ea514744b64a94f33f2666db20e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 169.03003
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333687378472029769, guid: 3d607ea514744b64a94f33f2666db20e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -35.799805
+      objectReference: {fileID: 0}
+    - target: {fileID: 8946230059081096563, guid: 3d607ea514744b64a94f33f2666db20e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CargarSeleccionMundo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d607ea514744b64a94f33f2666db20e, type: 3}
 --- !u!95 &975077598 stripped
@@ -2503,6 +2518,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6870783155958398695, guid: bce038fe901bde04498e9bf99f948e47,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bce038fe901bde04498e9bf99f948e47, type: 3}
 --- !u!1001 &6347090082997373935
@@ -2571,6 +2591,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6870783155958398695, guid: bce038fe901bde04498e9bf99f948e47,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bce038fe901bde04498e9bf99f948e47, type: 3}
