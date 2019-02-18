@@ -1355,6 +1355,12 @@ MonoBehaviour:
   PanelLlavesNivelCompletado: {fileID: 0}
   ticketM1: {fileID: 0}
   sonidoCogerLlave: {fileID: 0}
+  BotonesM1:
+  - {fileID: 1924584366}
+  - {fileID: 10690883}
+  - {fileID: 1976254726}
+  - {fileID: 439682606}
+  nextLvl: 0
 --- !u!4 &1129880104
 Transform:
   m_ObjectHideFlags: 0
