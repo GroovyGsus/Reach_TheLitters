@@ -27,21 +27,17 @@ public class EstirarWissel : MonoBehaviour
     void Update()
     {
         //Aqui hacemos que cuando pulsamos la serpiente empiece a crecer
-        if (pulsado == false)
-        {
-            if (Input.GetMouseButton(0))
-            {
-                pulsado = true;
-                wis.bodyType = RigidbodyType2D.Dynamic;
-                wis.velocity = new Vector2(speed, speed);
-            }
-        }
-        
-        
+
+
         
 
+
+
+
+
+
         //Aqui hacemos que si la serpiente está creciendo, genere los objetos vacios que tendran el collider 
-        if(wis.velocity.magnitude > 0)
+        if (wis.velocity.magnitude > 0)
         {
             //solo genera cuando el tiempo es mayor que proxCol
             if (Time.time > proxCol) 
@@ -61,5 +57,20 @@ public class EstirarWissel : MonoBehaviour
             wis.bodyType = RigidbodyType2D.Static;
             pulsado = false;
         }
+    }
+
+    private void OnMouseDown()
+    {
+        pulsado = true;
+        
+        wis.velocity = transform.right * speed;
+
+        if (pulsado == false)
+        {
+            wis.bodyType = RigidbodyType2D.Dynamic;
+            wis.velocity = transform.right * -speed;
+        }
+
+
     }
 }
