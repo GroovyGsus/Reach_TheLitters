@@ -581,6 +581,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: CargarSeleccionMundo
       objectReference: {fileID: 0}
+    - target: {fileID: 1252927836926095545, guid: 431bcf13eedcd864cb5092ac4e04077d,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 431bcf13eedcd864cb5092ac4e04077d, type: 3}
 --- !u!1 &491055811
@@ -1410,7 +1415,7 @@ PrefabInstance:
     - target: {fileID: 6352210224099610075, guid: b76a74bf1c05f5f4090edde0b63ef21a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.15
+      value: -1.1
       objectReference: {fileID: 0}
     - target: {fileID: 6352210224099610075, guid: b76a74bf1c05f5f4090edde0b63ef21a,
         type: 3}
@@ -2010,6 +2015,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 198614352248641158, guid: 1c349d5b6f4868c469b87b17fec43acd,
+        type: 3}
+      propertyPath: m_Name
+      value: GameController
+      objectReference: {fileID: 0}
     - target: {fileID: 198614352248641157, guid: 1c349d5b6f4868c469b87b17fec43acd,
         type: 3}
       propertyPath: PanelLlavesNivelCompletado
@@ -2025,11 +2035,6 @@ PrefabInstance:
       propertyPath: PanelLlaves
       value: 
       objectReference: {fileID: 832822227}
-    - target: {fileID: 198614352248641158, guid: 1c349d5b6f4868c469b87b17fec43acd,
-        type: 3}
-      propertyPath: m_Name
-      value: GameController
-      objectReference: {fileID: 0}
     - target: {fileID: 198614352248641156, guid: 1c349d5b6f4868c469b87b17fec43acd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2454,12 +2459,12 @@ PrefabInstance:
     - target: {fileID: 5745559356988770840, guid: d7d6618bc8c5bdc4aa52fb751998adbe,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.37
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5745559356988770840, guid: d7d6618bc8c5bdc4aa52fb751998adbe,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.021
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5745559356988770840, guid: d7d6618bc8c5bdc4aa52fb751998adbe,
         type: 3}
