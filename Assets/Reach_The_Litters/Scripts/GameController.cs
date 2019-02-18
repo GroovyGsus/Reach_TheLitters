@@ -55,12 +55,14 @@ public class GameController : MonoBehaviour
 
     public void CargarSeleccionMundo()
     {
+        Time.timeScale = 1;
         SelectorMusicaFondo.instancia.suenaMusicaMenu = true;
         SceneManager.LoadScene("Seleccion_Mundo");
     }
 
     public void CargarSelecNivelesM1()
     {
+        Time.timeScale = 1;
         SelectorMusicaFondo.instancia.suenaMusicaMenu = true;
         Invoke("CargarNivelesM1", 0.5f);
     }
@@ -105,18 +107,21 @@ public class GameController : MonoBehaviour
 
     public void CargarPantallaPrincipal()
     {
+        Time.timeScale = 1;
         SelectorMusicaFondo.instancia.suenaMusicaMenu = true;
         SceneManager.LoadScene("PantallaPrincipal");
     }
 
     public void CargarPantallaOpciones()
     {
+        Time.timeScale = 1;
         SelectorMusicaFondo.instancia.suenaMusicaMenu = true;
         SceneManager.LoadScene("PantallaOpciones");
     }
 
     public void CargarPantallaInicio()
     {
+        Time.timeScale = 1;
         SelectorMusicaFondo.instancia.suenaMusicaMenu = true;
         SceneManager.LoadScene("PantallaInicio");
     }
@@ -164,6 +169,6 @@ public class GameController : MonoBehaviour
     void Update ()
     {
         numerodeLlaves();
-        Debug.Log(llaves);
+        //Debug.Log(llaves);
     }
 }
