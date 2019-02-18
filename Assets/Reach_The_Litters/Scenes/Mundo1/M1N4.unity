@@ -1245,6 +1245,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6352210224099610072, guid: b76a74bf1c05f5f4090edde0b63ef21a,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.008289764
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352210224099610072, guid: b76a74bf1c05f5f4090edde0b63ef21a,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.60104424
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b76a74bf1c05f5f4090edde0b63ef21a, type: 3}
 --- !u!1 &697560747
@@ -1998,12 +2008,20 @@ PrefabInstance:
     - target: {fileID: 1260846706313625118, guid: a805449a6c1401f41b5b9e2444c5104e,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.016051091
+      value: 0.01605108
       objectReference: {fileID: 0}
     - target: {fileID: 1260846706313625118, guid: a805449a6c1401f41b5b9e2444c5104e,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: -0.401069
+      objectReference: {fileID: 0}
+    - target: {fileID: 426965437, guid: a805449a6c1401f41b5b9e2444c5104e, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.05999934
+      objectReference: {fileID: 0}
+    - target: {fileID: 1488768106, guid: a805449a6c1401f41b5b9e2444c5104e, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.00000014901161
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a805449a6c1401f41b5b9e2444c5104e, type: 3}
@@ -2652,12 +2670,12 @@ PrefabInstance:
     - target: {fileID: 3654152457005605971, guid: 3f4211dd17896904898d693b0f7cbeaa,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.027445698
+      value: 0.24129549
       objectReference: {fileID: 0}
     - target: {fileID: 3654152457005605971, guid: 3f4211dd17896904898d693b0f7cbeaa,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 0.275682
+      value: 0.3170652
       objectReference: {fileID: 0}
     - target: {fileID: 3654152457005605971, guid: 3f4211dd17896904898d693b0f7cbeaa,
         type: 3}
@@ -2692,12 +2710,12 @@ PrefabInstance:
     - target: {fileID: 986775955722940041, guid: 3f4211dd17896904898d693b0f7cbeaa,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 6.6799974
+      value: 6.680002
       objectReference: {fileID: 0}
     - target: {fileID: 3657481908118208133, guid: 3f4211dd17896904898d693b0f7cbeaa,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 6.8200016
+      value: 6.819997
       objectReference: {fileID: 0}
     - target: {fileID: 8813593109337220818, guid: 3f4211dd17896904898d693b0f7cbeaa,
         type: 3}
@@ -2722,7 +2740,7 @@ PrefabInstance:
     - target: {fileID: 1249723086332323584, guid: 3f4211dd17896904898d693b0f7cbeaa,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 6.739998
+      value: 6.7400026
       objectReference: {fileID: 0}
     - target: {fileID: 1249723086332323584, guid: 3f4211dd17896904898d693b0f7cbeaa,
         type: 3}
@@ -2732,13 +2750,23 @@ PrefabInstance:
     - target: {fileID: 7214419235010504395, guid: 3f4211dd17896904898d693b0f7cbeaa,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 6.7400026
+      value: 6.739998
       objectReference: {fileID: 0}
     - target: {fileID: 7214419235010504395, guid: 3f4211dd17896904898d693b0f7cbeaa,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 1.08
       objectReference: {fileID: 0}
+    - target: {fileID: 1356797665794949276, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
+    - target: {fileID: 1535482437325772895, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f4211dd17896904898d693b0f7cbeaa, type: 3}
 --- !u!1001 &1745976848
