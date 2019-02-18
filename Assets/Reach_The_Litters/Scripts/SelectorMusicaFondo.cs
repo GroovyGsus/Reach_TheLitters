@@ -54,6 +54,7 @@ public class SelectorMusicaFondo : MonoBehaviour
 
         if (!suenaMusicaMenu && SelectorMusicaFondo.instancia.audCam.clip != musicaInGameM1)
         {
+
             MusicaFondoInGame();
         }
 
@@ -61,8 +62,9 @@ public class SelectorMusicaFondo : MonoBehaviour
 
     public void MusicaFondoMenus()
     {
-        if(SelectorMusicaFondo.instancia.audCam.clip != musicaMenu && !SelectorMusicaFondo.instancia.audCam.isPlaying)
+        if(SelectorMusicaFondo.instancia.audCam.clip != musicaMenu)
         {
+            Debug.Log("Cambiando musica menu");
             SelectorMusicaFondo.instancia.audCam.clip = musicaMenu;
             SelectorMusicaFondo.instancia.audCam.Play();
         }
@@ -71,8 +73,10 @@ public class SelectorMusicaFondo : MonoBehaviour
 
     public void MusicaFondoInGame()
     {
-        if (SelectorMusicaFondo.instancia.audCam.clip != musicaInGameM1 && !SelectorMusicaFondo.instancia.audCam.isPlaying)
+        Debug.Log("Musica fondo ingame");
+        if (SelectorMusicaFondo.instancia.audCam.clip != musicaInGameM1)
         {
+            Debug.Log("Cambiando musica ingame");
             SelectorMusicaFondo.instancia.audCam.clip = musicaInGameM1;
             SelectorMusicaFondo.instancia.audCam.Play();
         }

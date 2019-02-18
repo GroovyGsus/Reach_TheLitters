@@ -164,6 +164,6 @@ public class GameController : MonoBehaviour
     void Update ()
     {
         numerodeLlaves();
-        Debug.Log(llaves);
+        //Debug.Log(llaves);
     }
 }
