@@ -26,7 +26,8 @@ public class EstirarWissel : MonoBehaviour
         //Aqui hacemos que cuando pulsamos la serpiente empiece a crecer
         if (Input.GetMouseButton(0))
         {
-            wis.velocity = new Vector2(speed, speed);          
+            // wis.velocity = new Vector2(speed, speed);   
+            wis.velocity =transform.right * speed;
         }
 
         //Aqui hacemos que si la serpiente está creciendo, genere los objetos vacios que tendran el collider 
