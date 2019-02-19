@@ -32,7 +32,7 @@ public class NivelFallido : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Area_Juego")
         {

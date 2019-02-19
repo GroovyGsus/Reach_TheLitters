@@ -7,8 +7,8 @@ public class SelectorSonidosCamara : MonoBehaviour
 
     public AudioClip pulsarTicket;
     public AudioClip pulsarBoton;
-    public AudioClip musicaMenu;
-    public AudioSource audCam;
+    
+    public AudioSource audCamSon;
 
     public static SelectorSonidosCamara instancia;
 
@@ -33,10 +33,8 @@ public class SelectorSonidosCamara : MonoBehaviour
     void Start()
     {
 
-        SelectorSonidosCamara.instancia.audCam = GetComponent<AudioSource>();
-        SelectorSonidosCamara.instancia.audCam.clip = musicaMenu;
-        SelectorSonidosCamara.instancia.audCam.Play();
-        
+        SelectorSonidosCamara.instancia.audCamSon = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -48,16 +46,16 @@ public class SelectorSonidosCamara : MonoBehaviour
     public void SonidoPulsarBoton()
     {
         
-        SelectorSonidosCamara.instancia.audCam.clip = pulsarBoton;
-        SelectorSonidosCamara.instancia.audCam.Play();
+        SelectorSonidosCamara.instancia.audCamSon.clip = pulsarBoton;
+        SelectorSonidosCamara.instancia.audCamSon.Play();
         
         Debug.Log("ha sonadoo");
     }
 
     public void SonidoPulsarTicket()
     {
-        SelectorSonidosCamara.instancia.audCam.clip = pulsarTicket;
-        SelectorSonidosCamara.instancia.audCam.Play();
+        SelectorSonidosCamara.instancia.audCamSon.clip = pulsarTicket;
+        SelectorSonidosCamara.instancia.audCamSon.Play();
     }
     
 

@@ -37,16 +37,17 @@ public class RompeCuerda : MonoBehaviour
 
         if (col.gameObject.tag == "Mouse" && Input.GetMouseButton(0))
         {
-            
+            /*
             conectado = false; 
             //gameObject.GetComponent<HingeJoint2D>();
             Destroy(jointCuerda);
             Destroy(lr);
-            Destroy(sr);
+            Destroy(sr);*/
             if(sonidoRomperCuerda != null)
             {
                 AudioSource.PlayClipAtPoint(sonidoRomperCuerda, transform.position);
             }
+            Destroy(transform.parent.gameObject);
             
         }
         

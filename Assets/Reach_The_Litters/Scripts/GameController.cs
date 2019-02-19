@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -22,10 +23,35 @@ public class GameController : MonoBehaviour
 
     public AudioSource sonidoCogerLlave;
 
-    
-
-
     private bool pausaDesactivada = true;
+
+    //Cosas para desbloquear los niveles
+    public Button[] BotonesM1;
+
+    public int nextLvl = 0;
+
+    void Start()
+    {
+        int lvlUnlock = PlayerPrefs.GetInt("lvlUnlock", 0);
+
+        for (int i = 0; i < BotonesM1.Length; i++)
+        {
+            if (i > lvlUnlock)
+            {
+                BotonesM1[i].interactable = false;
+            }
+        }
+    }
+
+    public void PasarNivel()
+    {
+        if (nextLvl < 4)
+        {
+            nextLvl++;
+            PlayerPrefs.SetInt("lvlUnlock", nextLvl);
+        }
+
+    }
 
 
     public void Pausa()
@@ -43,9 +69,12 @@ public class GameController : MonoBehaviour
 
     public void Reinicio()
     {
+        llaves = 0;
+        PanelLlavesNivelCompletado.SetInteger("llavesRecogidas", llaves);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1;
     }
+
     public void DesbloquearNivel(int nivel)
     {
         nivelesM1[nivel] = true;
@@ -53,56 +82,74 @@ public class GameController : MonoBehaviour
 
     public void CargarSeleccionMundo()
     {
+        Time.timeScale = 1;
+        SelectorMusicaFondo.instancia.suenaMusicaMenu = true;
         SceneManager.LoadScene("Seleccion_Mundo");
     }
 
     public void CargarSelecNivelesM1()
     {
-
+        Time.timeScale = 1;
+        SelectorMusicaFondo.instancia.suenaMusicaMenu = true;
         Invoke("CargarNivelesM1", 0.5f);
     }
 
     public void CargarNivelesM1()
     {
+        
         SceneManager.LoadScene("SelecNivelM1");
     }
 
     public void CargarM1N1()
     {
+        SelectorMusicaFondo.instancia.suenaMusicaMenu = false;
         SceneManager.LoadScene("M1N1");
         Time.timeScale = 1;
+        llaves = 0;
     }
 
     public void CargarM1N2()
     {
+        SelectorMusicaFondo.instancia.suenaMusicaMenu = false;
         SceneManager.LoadScene("M1N2");
         Time.timeScale = 1;
+        llaves = 0;
     }
 
     public void CargarM1N3()
     {
+        SelectorMusicaFondo.instancia.suenaMusicaMenu = false;
         SceneManager.LoadScene("M1N3");
         Time.timeScale = 1;
+        llaves = 0;
     }
 
     public void CargarM1N4()
     {
+        SelectorMusicaFondo.instancia.suenaMusicaMenu = false;
         SceneManager.LoadScene("M1N4");
         Time.timeScale = 1;
+        llaves = 0;
     }
 
     public void CargarPantallaPrincipal()
     {
+        Time.timeScale = 1;
+        SelectorMusicaFondo.instancia.suenaMusicaMenu = true;
         SceneManager.LoadScene("PantallaPrincipal");
     }
 
     public void CargarPantallaOpciones()
     {
+        Time.timeScale = 1;
+        SelectorMusicaFondo.instancia.suenaMusicaMenu = true;
         SceneManager.LoadScene("PantallaOpciones");
     }
 
     public void CargarPantallaInicio()
     {
+        Time.timeScale = 1;
+        SelectorMusicaFondo.instancia.suenaMusicaMenu = true;
         SceneManager.LoadScene("PantallaInicio");
     }
 
@@ -149,6 +196,6 @@ public class GameController : MonoBehaviour
     void Update ()
     {
         numerodeLlaves();
-        Debug.Log(llaves);
+        //Debug.Log(llaves);
     }
 }

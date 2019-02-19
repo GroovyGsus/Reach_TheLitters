@@ -72,7 +72,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.0000008009374, y: 6.7399917}
+  m_ConnectedAnchor: {x: 0, y: 6.739993}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -188,6 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17461489fb50d604d8b15270d673d98b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoRomperCuerda: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
 --- !u!212 &5594314348762409007
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -358,7 +359,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.000001322478, y: 6.7400084}
+  m_ConnectedAnchor: {x: -0.0000047683716, y: 6.7400074}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -474,6 +475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17461489fb50d604d8b15270d673d98b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoRomperCuerda: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
 --- !u!212 &4380774607084201400
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -553,7 +555,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.43445516, y: -0.15758099}
+  m_ConnectedAnchor: {x: 3.3148792, y: 3.4807913}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -632,7 +634,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.5125551, y: -0.01935058}
+  m_ConnectedAnchor: {x: 3.3148794, y: 2.8067913}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
