@@ -5,6 +5,8 @@ using UnityEngine;
 public class SonidoMady : MonoBehaviour
 {
     AudioSource sonido;
+    public AudioClip normal;
+    public AudioClip triste;
     bool piar = true;
     // Start is called before the first frame update
     void Start()
@@ -25,6 +27,14 @@ public class SonidoMady : MonoBehaviour
     public void Piar()
     {
         piar = true;
+        sonido.clip = normal;
+        sonido.Play();
+    }
+
+    public void Triste()
+    {
+     
+        sonido.clip = triste;
         sonido.Play();
     }
 }

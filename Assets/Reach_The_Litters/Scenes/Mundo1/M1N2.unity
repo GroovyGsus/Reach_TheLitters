@@ -409,8 +409,77 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 82.95901}
+--- !u!1001 &377296510
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3050313089044805999, guid: 05483207e61fc23479fb78af1904a5f3,
+        type: 3}
+      propertyPath: m_Name
+      value: MusicaFondo
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050313089044805997, guid: 05483207e61fc23479fb78af1904a5f3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.89884484
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050313089044805997, guid: 05483207e61fc23479fb78af1904a5f3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.88342583
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050313089044805997, guid: 05483207e61fc23479fb78af1904a5f3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.19512334
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050313089044805997, guid: 05483207e61fc23479fb78af1904a5f3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050313089044805997, guid: 05483207e61fc23479fb78af1904a5f3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050313089044805997, guid: 05483207e61fc23479fb78af1904a5f3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050313089044805997, guid: 05483207e61fc23479fb78af1904a5f3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050313089044805997, guid: 05483207e61fc23479fb78af1904a5f3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050313089044805997, guid: 05483207e61fc23479fb78af1904a5f3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050313089044805997, guid: 05483207e61fc23479fb78af1904a5f3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050313089044805997, guid: 05483207e61fc23479fb78af1904a5f3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 05483207e61fc23479fb78af1904a5f3, type: 3}
 --- !u!95 &503348442 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 7578410905422613749, guid: 3d607ea514744b64a94f33f2666db20e,
@@ -511,11 +580,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: huevo
       objectReference: {fileID: 0}
-    - target: {fileID: 1451742507405528127, guid: f71aaa4e00719ee40a6527e4e643e39e,
-        type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1451742507405528065, guid: f71aaa4e00719ee40a6527e4e643e39e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -569,6 +633,11 @@ PrefabInstance:
     - target: {fileID: 1451742507405528065, guid: f71aaa4e00719ee40a6527e4e643e39e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1451742507405528127, guid: f71aaa4e00719ee40a6527e4e643e39e,
+        type: 3}
+      propertyPath: m_BodyType
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -883,6 +952,56 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.y
       value: 6.6600013
       objectReference: {fileID: 0}
+    - target: {fileID: 3484022112648891583, guid: aa83e5cce1dbb3a47b9f70acad832730,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
+    - target: {fileID: 3484022112496162189, guid: aa83e5cce1dbb3a47b9f70acad832730,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
+    - target: {fileID: 4017996791204402300, guid: aa83e5cce1dbb3a47b9f70acad832730,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
+    - target: {fileID: 4017996791107439950, guid: aa83e5cce1dbb3a47b9f70acad832730,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
+    - target: {fileID: 4097506463349035145, guid: aa83e5cce1dbb3a47b9f70acad832730,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
+    - target: {fileID: 4097506463238506939, guid: aa83e5cce1dbb3a47b9f70acad832730,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
+    - target: {fileID: 7055606960442563810, guid: aa83e5cce1dbb3a47b9f70acad832730,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
+    - target: {fileID: 7055606960527787472, guid: aa83e5cce1dbb3a47b9f70acad832730,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
+    - target: {fileID: 2601608232814551180, guid: aa83e5cce1dbb3a47b9f70acad832730,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
+    - target: {fileID: 2601608232977775038, guid: aa83e5cce1dbb3a47b9f70acad832730,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa83e5cce1dbb3a47b9f70acad832730, type: 3}
 --- !u!1001 &936864302
@@ -1467,7 +1586,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -41.664}
 --- !u!1 &1715405814
 GameObject:
@@ -1533,7 +1652,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1779346288
 PrefabInstance:
@@ -1820,5 +1939,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3484022112648891583, guid: aa83e5cce1dbb3a47b9f70acad832730,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
+    - target: {fileID: 3484022112496162189, guid: aa83e5cce1dbb3a47b9f70acad832730,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
+    - target: {fileID: 4017996791204402300, guid: aa83e5cce1dbb3a47b9f70acad832730,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
+    - target: {fileID: 4017996791107439950, guid: aa83e5cce1dbb3a47b9f70acad832730,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
+    - target: {fileID: 2674730306833671948, guid: aa83e5cce1dbb3a47b9f70acad832730,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
+    - target: {fileID: 4097506463349035145, guid: aa83e5cce1dbb3a47b9f70acad832730,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
+    - target: {fileID: 4097506463238506939, guid: aa83e5cce1dbb3a47b9f70acad832730,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
+    - target: {fileID: 7055606960442563810, guid: aa83e5cce1dbb3a47b9f70acad832730,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
+    - target: {fileID: 7055606960527787472, guid: aa83e5cce1dbb3a47b9f70acad832730,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
+    - target: {fileID: 2601608232814551180, guid: aa83e5cce1dbb3a47b9f70acad832730,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
+    - target: {fileID: 2601608232977775038, guid: aa83e5cce1dbb3a47b9f70acad832730,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa83e5cce1dbb3a47b9f70acad832730, type: 3}
