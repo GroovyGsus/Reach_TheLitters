@@ -94,6 +94,20 @@ public class GameController : MonoBehaviour
         Invoke("CargarNivelesM1", 0.5f);
     }
 
+    public void CargarSelecNivelesM2()
+    {
+        Time.timeScale = 1;
+        SelectorMusicaFondo.instancia.suenaMusicaMenu = true;
+        Invoke("CargarNivelesM2", 0.5f);
+    }
+
+    public void CargarSelecNivelesM3()
+    {
+        Time.timeScale = 1;
+        SelectorMusicaFondo.instancia.suenaMusicaMenu = true;
+        Invoke("CargarNivelesM3", 0.5f);
+    }
+
     public void CargarNivelesM1()
     {
         
