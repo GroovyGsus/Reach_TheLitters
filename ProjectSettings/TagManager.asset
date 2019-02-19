@@ -9,6 +9,7 @@ TagManager:
   - Mouse
   - Llave
   - Escenario
+  - vacio
   layers:
   - Default
   - TransparentFX
