@@ -35,10 +35,11 @@ public class RecogerHuevo : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Destroy(gameObject);
+           
             anim.SetTrigger("activar");
             Time.timeScale = 0;
             sonido.Play();
+            Destroy(gameObject);
         }
           
     }

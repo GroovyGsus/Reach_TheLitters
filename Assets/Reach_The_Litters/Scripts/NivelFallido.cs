@@ -6,16 +6,17 @@ public class NivelFallido : MonoBehaviour
 
 {
 
-    public AudioSource sonidoMadyTriste;
+
 
     GameObject panelNivelFallido;
-
+    SonidoMady scriptSonido;
     Animator anim;
     
     // Start is called before the first frame update
     void Start()
     {
         panelNivelFallido = GameObject.Find("Panel_nivel_fallido");
+        scriptSonido =  GameObject.Find("Maddy").GetComponent<SonidoMady>();
         if(panelNivelFallido == null)
         {
             Debug.LogError("Hace falta tener el objeto Panel_nivel_fallido en la escena", gameObject);
@@ -37,7 +38,7 @@ public class NivelFallido : MonoBehaviour
         if (other.gameObject.tag == "Area_Juego")
         {
             anim.SetTrigger("activar");
-            sonidoMadyTriste.Play();
+            scriptSonido.Triste();
             Time.timeScale = 0;
            
         }
