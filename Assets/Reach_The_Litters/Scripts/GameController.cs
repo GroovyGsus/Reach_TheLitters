@@ -132,6 +132,47 @@ public class GameController : MonoBehaviour
         llaves = 0;
     }
 
+    public void CargarM2N1()
+    {
+        SelectorMusicaFondo.instancia.suenaMusicaMenu = false;
+        SceneManager.LoadScene("M2.N1");
+        Time.timeScale = 1;
+        llaves = 0;
+    }
+
+    public void CargarM2N2()
+    {
+        SelectorMusicaFondo.instancia.suenaMusicaMenu = false;
+        SceneManager.LoadScene("M2.N2");
+        Time.timeScale = 1;
+        llaves = 0;
+    }
+
+    public void CargarM2N3()
+    {
+        SelectorMusicaFondo.instancia.suenaMusicaMenu = false;
+        SceneManager.LoadScene("M2.N3");
+        Time.timeScale = 1;
+        llaves = 0;
+    }
+
+    public void CargarM3N1()
+    {
+        SelectorMusicaFondo.instancia.suenaMusicaMenu = false;
+        SceneManager.LoadScene("M3.N1");
+        Time.timeScale = 1;
+        llaves = 0;
+    }
+
+    public void CargarM3N2()
+    {
+        SelectorMusicaFondo.instancia.suenaMusicaMenu = false;
+        SceneManager.LoadScene("M3.N2");
+        Time.timeScale = 1;
+        llaves = 0;
+
+    }
+
     public void CargarPantallaPrincipal()
     {
         Time.timeScale = 1;
