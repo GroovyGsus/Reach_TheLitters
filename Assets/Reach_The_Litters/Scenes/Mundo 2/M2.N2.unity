@@ -162,7 +162,7 @@ PrefabInstance:
     - target: {fileID: 1252927836894726349, guid: 431bcf13eedcd864cb5092ac4e04077d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1252927836894726349, guid: 431bcf13eedcd864cb5092ac4e04077d,
         type: 3}
@@ -370,7 +370,7 @@ PrefabInstance:
     - target: {fileID: 3721278741646844081, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3721278741646844081, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
         type: 3}
@@ -461,22 +461,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 182307734}
+      objectReference: {fileID: 182307735}
+    - target: {fileID: 3721278741988986483, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CargarM2N3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721278741988986483, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e, type: 3}
---- !u!1 &182307734 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 198614352248641158, guid: 1c349d5b6f4868c469b87b17fec43acd,
-    type: 3}
-  m_PrefabInstance: {fileID: 96314072}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &182307735 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 198614352248641157, guid: 1c349d5b6f4868c469b87b17fec43acd,
     type: 3}
   m_PrefabInstance: {fileID: 96314072}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 182307734}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf383417ca81716428388175c55b45cd, type: 3}
@@ -1167,7 +1171,7 @@ PrefabInstance:
     - target: {fileID: 1027980488409659641, guid: 3d607ea514744b64a94f33f2666db20e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1027980488409659641, guid: 3d607ea514744b64a94f33f2666db20e,
         type: 3}
@@ -1829,7 +1833,7 @@ Transform:
   m_LocalScale: {x: 0.696, y: 0.696, z: 0.696}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &1699817229
 PolygonCollider2D:

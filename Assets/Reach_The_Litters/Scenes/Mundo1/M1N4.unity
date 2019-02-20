@@ -323,6 +323,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.6349
       objectReference: {fileID: 0}
+    - target: {fileID: 6870783155958398695, guid: bce038fe901bde04498e9bf99f948e47,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4408664110189097994, guid: bce038fe901bde04498e9bf99f948e47,
         type: 3}
       propertyPath: m_IsTrigger
@@ -332,11 +337,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AutoTiling
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6870783155958398695, guid: bce038fe901bde04498e9bf99f948e47,
-        type: 3}
-      propertyPath: m_BodyType
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bce038fe901bde04498e9bf99f948e47, type: 3}
@@ -682,7 +682,7 @@ PrefabInstance:
     - target: {fileID: 3721278741646844081, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3721278741646844081, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
         type: 3}
@@ -809,17 +809,32 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 3721278743123295271, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
-        type: 3}
-      propertyPath: m_RaycastTarget
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3721278741083414324, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
         type: 3}
       propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3721278742212279372, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721278741988986483, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 609849692}
+    - target: {fileID: 3721278741988986483, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CargarM2N1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721278741988986483, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721278743123295271, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
         type: 3}
       propertyPath: m_RaycastTarget
       value: 0
@@ -865,7 +880,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &455865722
 PrefabInstance:
@@ -994,11 +1009,6 @@ PrefabInstance:
       propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1252927836926095551, guid: 431bcf13eedcd864cb5092ac4e04077d,
-        type: 3}
-      propertyPath: m_UpdateMode
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 1252927838024066494, guid: 431bcf13eedcd864cb5092ac4e04077d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1058,6 +1068,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1252927836926095551, guid: 431bcf13eedcd864cb5092ac4e04077d,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 431bcf13eedcd864cb5092ac4e04077d, type: 3}
@@ -1716,7 +1731,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &867558881
 PrefabInstance:
@@ -2563,11 +2578,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.75
       objectReference: {fileID: 0}
-    - target: {fileID: 5718670106160324515, guid: 79b9a20d7eaed754d89ab72cccb14080,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5718670106160324510, guid: 79b9a20d7eaed754d89ab72cccb14080,
         type: 3}
       propertyPath: m_Offset.x
@@ -2588,15 +2598,20 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 4.7032533
       objectReference: {fileID: 0}
-    - target: {fileID: 5718670106160324513, guid: 79b9a20d7eaed754d89ab72cccb14080,
-        type: 3}
-      propertyPath: m_ForceMagnitude
-      value: 0.2
-      objectReference: {fileID: 0}
     - target: {fileID: 5718670106160324511, guid: 79b9a20d7eaed754d89ab72cccb14080,
         type: 3}
       propertyPath: velMax
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5718670106160324515, guid: 79b9a20d7eaed754d89ab72cccb14080,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5718670106160324513, guid: 79b9a20d7eaed754d89ab72cccb14080,
+        type: 3}
+      propertyPath: m_ForceMagnitude
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79b9a20d7eaed754d89ab72cccb14080, type: 3}
@@ -2682,6 +2697,11 @@ PrefabInstance:
       propertyPath: m_ConnectedRigidBody
       value: 
       objectReference: {fileID: 1236496371}
+    - target: {fileID: 3354789920891159589, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.433
+      objectReference: {fileID: 0}
     - target: {fileID: 1569447597322960022, guid: 3f4211dd17896904898d693b0f7cbeaa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2697,11 +2717,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -0.245
       objectReference: {fileID: 0}
-    - target: {fileID: 3354789920891159589, guid: 3f4211dd17896904898d693b0f7cbeaa,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.433
-      objectReference: {fileID: 0}
     - target: {fileID: 986775955722940041, guid: 3f4211dd17896904898d693b0f7cbeaa,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -2712,11 +2727,21 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.y
       value: 6.680002
       objectReference: {fileID: 0}
+    - target: {fileID: 1356797665794949276, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
     - target: {fileID: 3657481908118208133, guid: 3f4211dd17896904898d693b0f7cbeaa,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: 6.819997
       objectReference: {fileID: 0}
+    - target: {fileID: 1535482437325772895, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
     - target: {fileID: 8813593109337220818, guid: 3f4211dd17896904898d693b0f7cbeaa,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -2757,16 +2782,6 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.x
       value: 1.08
       objectReference: {fileID: 0}
-    - target: {fileID: 1356797665794949276, guid: 3f4211dd17896904898d693b0f7cbeaa,
-        type: 3}
-      propertyPath: sonidoRomperCuerda
-      value: 
-      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
-    - target: {fileID: 1535482437325772895, guid: 3f4211dd17896904898d693b0f7cbeaa,
-        type: 3}
-      propertyPath: sonidoRomperCuerda
-      value: 
-      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f4211dd17896904898d693b0f7cbeaa, type: 3}
 --- !u!1001 &1745976848
@@ -3244,7 +3259,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &7578410903467183869
 PrefabInstance:
