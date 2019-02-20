@@ -9,6 +9,7 @@ public class RecogerHuevo : MonoBehaviour
     GameObject NivelCompletado;
     Animator anim;
 
+    public GameObject gameControl;
 
     void Start()
     {
@@ -39,6 +40,9 @@ public class RecogerHuevo : MonoBehaviour
             anim.SetTrigger("activar");
             Time.timeScale = 0;
             sonido.Play();
+
+            gameControl.GetComponent<GameController>().PasarNivel();
+
             Destroy(gameObject);
         }
           
