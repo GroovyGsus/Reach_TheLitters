@@ -46,7 +46,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -143,3 +143,4 @@ MonoBehaviour:
   audCam: {fileID: 0}
   musicaMenu: {fileID: 8300000, guid: 3f60f0610f02ae848a2a606e1da00925, type: 3}
   musicaInGameM1: {fileID: 8300000, guid: 3f2b27e75b11f1e40b637486f1acda89, type: 3}
+  suenaMusicaMenu: 1
