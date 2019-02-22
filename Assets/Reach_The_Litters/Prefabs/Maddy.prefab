@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normal: {fileID: 8300000, guid: 55d386d25ed6d094283d5dda16269804, type: 3}
-  triste: {fileID: 8300000, guid: aa5d15b1893a152429cab631b3058aab, type: 3}
+  triste: {fileID: 8300000, guid: 31e5b2dccbdc4ba4d83ba0bf7f310839, type: 3}
 --- !u!114 &1287515831
 MonoBehaviour:
   m_ObjectHideFlags: 0
