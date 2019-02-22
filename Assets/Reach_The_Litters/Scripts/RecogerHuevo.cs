@@ -8,12 +8,14 @@ public class RecogerHuevo : MonoBehaviour
     AudioSource sonido;
     GameObject NivelCompletado;
     Animator anim;
-
-    public GameObject gameControl;
+    public GameObject gameController;
+   
 
     void Start()
     {
         sonido = GetComponent<AudioSource>();
+
+        gameController = GameObject.FindGameObjectWithTag("GameController");
 
         NivelCompletado = GameObject.Find("panel_NivelCompletado");
         if (NivelCompletado == null)
@@ -36,15 +38,13 @@ public class RecogerHuevo : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-           
+
             anim.SetTrigger("activar");
             Time.timeScale = 0;
             sonido.Play();
-
-            gameControl.GetComponent<GameController>().PasarNivel();
-
+            gameController.GetComponent<GameController>().ReseteaAnimLlaves();
+            gameController.GetComponent<GameController>().PasarNivel();
             Destroy(gameObject);
         }
-          
-    }
+    } 
 }

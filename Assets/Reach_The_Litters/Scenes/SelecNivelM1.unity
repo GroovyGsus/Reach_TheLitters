@@ -1957,7 +1957,7 @@ PrefabInstance:
     - target: {fileID: 5691158516841463660, guid: c7b5a7f1dd5d7c346a411f332060f9b0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -619
+      value: -659
       objectReference: {fileID: 0}
     - target: {fileID: 5691158516841463660, guid: c7b5a7f1dd5d7c346a411f332060f9b0,
         type: 3}
@@ -2499,7 +2499,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1795518080, guid: 9395e1f3af1e9d9479d880ae615cd155, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -171.4
+      value: -163
       objectReference: {fileID: 0}
     - target: {fileID: 1795518080, guid: 9395e1f3af1e9d9479d880ae615cd155, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2536,6 +2536,18 @@ PrefabInstance:
     - target: {fileID: 1795518080, guid: 9395e1f3af1e9d9479d880ae615cd155, type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795518080, guid: 9395e1f3af1e9d9479d880ae615cd155, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.5669773
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795518080, guid: 9395e1f3af1e9d9479d880ae615cd155, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.5669773
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795518080, guid: 9395e1f3af1e9d9479d880ae615cd155, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.5669773
       objectReference: {fileID: 0}
     - target: {fileID: 1795518081, guid: 9395e1f3af1e9d9479d880ae615cd155, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2644,7 +2656,7 @@ PrefabInstance:
     - target: {fileID: 3911993414270687770, guid: b72b55a4351c49c4aa7aa02b5a6e831d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -14.9
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3911993414270687770, guid: b72b55a4351c49c4aa7aa02b5a6e831d,
         type: 3}
@@ -2691,6 +2703,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3911993414270687770, guid: b72b55a4351c49c4aa7aa02b5a6e831d,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 8.370047
+      objectReference: {fileID: 0}
+    - target: {fileID: 3911993414270687770, guid: b72b55a4351c49c4aa7aa02b5a6e831d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 8.370047
+      objectReference: {fileID: 0}
+    - target: {fileID: 3911993414270687770, guid: b72b55a4351c49c4aa7aa02b5a6e831d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 8.370047
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b72b55a4351c49c4aa7aa02b5a6e831d, type: 3}
 --- !u!1001 &7389949561752780230
@@ -2700,11 +2727,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1572099986}
     m_Modifications:
-    - target: {fileID: 683808869047101740, guid: 28beb32f1252b514b96828a8c8efbe4c,
-        type: 3}
-      propertyPath: m_Name
-      value: botonAjustes
-      objectReference: {fileID: 0}
     - target: {fileID: 94900396145827039, guid: 28beb32f1252b514b96828a8c8efbe4c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2763,7 +2785,7 @@ PrefabInstance:
     - target: {fileID: 94900396145827039, guid: 28beb32f1252b514b96828a8c8efbe4c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 142
+      value: 150.4
       objectReference: {fileID: 0}
     - target: {fileID: 94900396145827039, guid: 28beb32f1252b514b96828a8c8efbe4c,
         type: 3}
@@ -2809,6 +2831,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 94900396145827039, guid: 28beb32f1252b514b96828a8c8efbe4c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.7037632
+      objectReference: {fileID: 0}
+    - target: {fileID: 94900396145827039, guid: 28beb32f1252b514b96828a8c8efbe4c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.7037632
+      objectReference: {fileID: 0}
+    - target: {fileID: 94900396145827039, guid: 28beb32f1252b514b96828a8c8efbe4c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.7037632
+      objectReference: {fileID: 0}
+    - target: {fileID: 683808869047101740, guid: 28beb32f1252b514b96828a8c8efbe4c,
+        type: 3}
+      propertyPath: m_Name
+      value: botonAjustes
       objectReference: {fileID: 0}
     - target: {fileID: 2148717690088903099, guid: 28beb32f1252b514b96828a8c8efbe4c,
         type: 3}
