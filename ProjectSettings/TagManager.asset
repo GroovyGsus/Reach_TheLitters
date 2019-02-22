@@ -10,6 +10,7 @@ TagManager:
   - Llave
   - Escenario
   - vacio
+  - Piedras
   layers:
   - Default
   - TransparentFX
