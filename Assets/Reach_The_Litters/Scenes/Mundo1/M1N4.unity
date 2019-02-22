@@ -682,7 +682,7 @@ PrefabInstance:
     - target: {fileID: 3721278741646844081, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3721278741646844081, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
         type: 3}
@@ -1496,6 +1496,14 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -24.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1569588766, guid: f71aaa4e00719ee40a6527e4e643e39e, type: 3}
+      propertyPath: nivel
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1569588766, guid: f71aaa4e00719ee40a6527e4e643e39e, type: 3}
+      propertyPath: mundo
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f71aaa4e00719ee40a6527e4e643e39e, type: 3}
@@ -2578,6 +2586,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.75
       objectReference: {fileID: 0}
+    - target: {fileID: 5718670106160324513, guid: 79b9a20d7eaed754d89ab72cccb14080,
+        type: 3}
+      propertyPath: m_ForceMagnitude
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5718670106160324511, guid: 79b9a20d7eaed754d89ab72cccb14080,
+        type: 3}
+      propertyPath: velMax
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5718670106160324515, guid: 79b9a20d7eaed754d89ab72cccb14080,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5718670106160324510, guid: 79b9a20d7eaed754d89ab72cccb14080,
         type: 3}
       propertyPath: m_Offset.x
@@ -2597,21 +2620,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.y
       value: 4.7032533
-      objectReference: {fileID: 0}
-    - target: {fileID: 5718670106160324511, guid: 79b9a20d7eaed754d89ab72cccb14080,
-        type: 3}
-      propertyPath: velMax
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5718670106160324515, guid: 79b9a20d7eaed754d89ab72cccb14080,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5718670106160324513, guid: 79b9a20d7eaed754d89ab72cccb14080,
-        type: 3}
-      propertyPath: m_ForceMagnitude
-      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79b9a20d7eaed754d89ab72cccb14080, type: 3}
@@ -2682,36 +2690,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3354789920891159589, guid: 3f4211dd17896904898d693b0f7cbeaa,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.433
-      objectReference: {fileID: 0}
-    - target: {fileID: 4337068771397954423, guid: 3f4211dd17896904898d693b0f7cbeaa,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.245
-      objectReference: {fileID: 0}
-    - target: {fileID: 1569447597322960022, guid: 3f4211dd17896904898d693b0f7cbeaa,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.043
-      objectReference: {fileID: 0}
-    - target: {fileID: 6132817374045482514, guid: 3f4211dd17896904898d693b0f7cbeaa,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.097
-      objectReference: {fileID: 0}
-    - target: {fileID: 2568310264250720808, guid: 3f4211dd17896904898d693b0f7cbeaa,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.x
-      value: -0.020000637
-      objectReference: {fileID: 0}
-    - target: {fileID: 2568310264250720808, guid: 3f4211dd17896904898d693b0f7cbeaa,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 6.659999
-      objectReference: {fileID: 0}
     - target: {fileID: 3654152457005605971, guid: 3f4211dd17896904898d693b0f7cbeaa,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -2727,10 +2705,25 @@ PrefabInstance:
       propertyPath: m_ConnectedRigidBody
       value: 
       objectReference: {fileID: 1236496371}
-    - target: {fileID: 3657481908118208133, guid: 3f4211dd17896904898d693b0f7cbeaa,
+    - target: {fileID: 3354789920891159589, guid: 3f4211dd17896904898d693b0f7cbeaa,
         type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 6.819997
+      propertyPath: m_LocalPosition.x
+      value: -0.433
+      objectReference: {fileID: 0}
+    - target: {fileID: 1569447597322960022, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.043
+      objectReference: {fileID: 0}
+    - target: {fileID: 6132817374045482514, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.097
+      objectReference: {fileID: 0}
+    - target: {fileID: 4337068771397954423, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.245
       objectReference: {fileID: 0}
     - target: {fileID: 986775955722940041, guid: 3f4211dd17896904898d693b0f7cbeaa,
         type: 3}
@@ -2747,6 +2740,36 @@ PrefabInstance:
       propertyPath: sonidoRomperCuerda
       value: 
       objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
+    - target: {fileID: 3657481908118208133, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 6.819997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1535482437325772895, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: sonidoRomperCuerda
+      value: 
+      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
+    - target: {fileID: 8813593109337220818, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 0.18799996
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813593109337220818, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.33200002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2568310264250720808, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.020000637
+      objectReference: {fileID: 0}
+    - target: {fileID: 2568310264250720808, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 6.659999
+      objectReference: {fileID: 0}
     - target: {fileID: 1249723086332323584, guid: 3f4211dd17896904898d693b0f7cbeaa,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
@@ -2757,11 +2780,6 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.x
       value: 2.96
       objectReference: {fileID: 0}
-    - target: {fileID: 1535482437325772895, guid: 3f4211dd17896904898d693b0f7cbeaa,
-        type: 3}
-      propertyPath: sonidoRomperCuerda
-      value: 
-      objectReference: {fileID: 8300000, guid: d62d4babe050bc44d800087cf1b0f198, type: 3}
     - target: {fileID: 7214419235010504395, guid: 3f4211dd17896904898d693b0f7cbeaa,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
@@ -2771,16 +2789,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 1.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 8813593109337220818, guid: 3f4211dd17896904898d693b0f7cbeaa,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.x
-      value: 0.18799996
-      objectReference: {fileID: 0}
-    - target: {fileID: 8813593109337220818, guid: 3f4211dd17896904898d693b0f7cbeaa,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.33200002
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f4211dd17896904898d693b0f7cbeaa, type: 3}

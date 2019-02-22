@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class RecogerHuevo : MonoBehaviour
 {
     AudioSource sonido;
+    public int nivel = 1;
+    public int mundo = 0;
     GameObject NivelCompletado;
     Animator anim;
 
@@ -41,7 +43,7 @@ public class RecogerHuevo : MonoBehaviour
             Time.timeScale = 0;
             sonido.Play();
 
-            gameControl.GetComponent<GameController>().PasarNivel();
+            GameController.nivelMax[mundo] = nivel;
 
             Destroy(gameObject);
         }

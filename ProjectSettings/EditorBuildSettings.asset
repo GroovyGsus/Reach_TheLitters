@@ -45,13 +45,13 @@ EditorBuildSettings:
     path: Assets/Reach_The_Litters/Scenes/SelecNivelM3.unity
     guid: 3a3377722393d2d4299e5d1f89cf3f42
   - enabled: 1
-    path: Assets/Reach_The_Litters/Scenes/Mundo 2/M2.N1.unity
+    path: Assets/Reach_The_Litters/Scenes/Mundo2/M2.N1.unity
     guid: acfc4ad8e08549840bb7634040f5c84e
   - enabled: 1
-    path: Assets/Reach_The_Litters/Scenes/Mundo 2/M2.N2.unity
+    path: Assets/Reach_The_Litters/Scenes/Mundo2/M2.N2.unity
     guid: f6eb2e76d67daed48a0c11865b9947f7
   - enabled: 1
-    path: Assets/Reach_The_Litters/Scenes/Mundo 2/M2.N3.unity
+    path: Assets/Reach_The_Litters/Scenes/Mundo2/M2.N3.unity
     guid: 40f2b5c2367735f419c00e9ce5a12742
   - enabled: 1
     path: Assets/Reach_The_Litters/Scenes/Mundo3/M3.N1.unity
