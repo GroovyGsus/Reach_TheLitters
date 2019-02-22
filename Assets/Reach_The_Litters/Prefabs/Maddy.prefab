@@ -130,7 +130,8 @@ AudioSource:
   m_GameObject: {fileID: 6352210224099610077}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 86a2b0f2db923fa46a6dcc6564cd4217,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 55d386d25ed6d094283d5dda16269804, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -139,7 +140,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 117
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -243,4 +244,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2bf53cdda832b949a3d7f6d722867db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoMadyTriste: {fileID: 0}
