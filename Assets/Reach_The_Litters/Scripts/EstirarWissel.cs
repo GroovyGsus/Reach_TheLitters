@@ -21,10 +21,13 @@ public class EstirarWissel : MonoBehaviour
 
     public GameObject megaVacio;
 
+    private Vector3 posicionInicial;
+
     void Start()
     {
         wis = GetComponent<Rigidbody2D>();
         estirado = false;
+        posicionInicial = transform.position;
     }
 
     void Update()
@@ -32,7 +35,7 @@ public class EstirarWissel : MonoBehaviour
 
 
         //Aqui hacemos que si la serpiente está creciendo, genere los objetos vacios que tendran el collider 
-        if (wis.velocity.magnitude > 0 && wis.velocity.x > 0)
+        if (wis.velocity.magnitude > 0 && !estirado)
         {
             //solo genera cuando el tiempo es mayor que proxCol
             if (Time.time > proxCol) 
@@ -44,39 +47,41 @@ public class EstirarWissel : MonoBehaviour
            
         }
 
+        if (Mathf.Round(transform.position.x) == Mathf.Round(posicionInicial.x) && estirado)
+        {
+            wis.bodyType = RigidbodyType2D.Static;
+            estirado = false;
+            transform.position = posicionInicial;
+        }
+        
+
+
+
+
     }
 
     //aquí hacemos que la serpiente pare de crecer cuando colisiona con un objeto con tag escenario
     private void OnCollisionEnter2D(Collision2D col)
     {
         Debug.Log("CHOCANDO" + col.transform.name);
-        if (col.gameObject.CompareTag("Escenario"))
+        if (col.gameObject.CompareTag("Escenario") && !estirado)
         {
-            if (estirado == false)
-            {
-                wis.bodyType = RigidbodyType2D.Static;
-                estirado = true;
-                
-            }else if (estirado == true)
-            {
-                wis.bodyType = RigidbodyType2D.Static;
-                estirado = false;
-                
-            }
+            wis.bodyType = RigidbodyType2D.Static;
+            estirado = !estirado;
         }
 
+       
     }
-
+    
     private void OnMouseDown()
     {
         wis.bodyType = RigidbodyType2D.Dynamic;
-        if (estirado == false)
+
+        if (!estirado)
         {
             wis.velocity = transform.right * speed;
         }
-        
-
-        if (estirado == true)
+        else
         {
             int childs = megaVacio.transform.childCount;
             for (int i = 0; i < childs; i++)

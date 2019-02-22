@@ -114,6 +114,17 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene("SelecNivelM1");
     }
 
+    public void CargarNivelesM2()
+    {
+
+        SceneManager.LoadScene("SelecNivelM2");
+    }
+
+    public void CargarNivelesM3()
+    {
+
+        SceneManager.LoadScene("SelecNivelM3");
+    }
     public void CargarM1N1()
     {
         SelectorMusicaFondo.instancia.suenaMusicaMenu = false;

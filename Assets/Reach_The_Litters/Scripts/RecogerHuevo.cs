@@ -8,8 +8,13 @@ public class RecogerHuevo : MonoBehaviour
     AudioSource sonido;
     GameObject NivelCompletado;
     Animator anim;
+<<<<<<< HEAD
     public GameObject gameController;
    
+=======
+
+    public GameObject gameControl;
+>>>>>>> 3d72eeb491e631a6c9191bce9f0f85869da18c97
 
     void Start()
     {
@@ -42,7 +47,13 @@ public class RecogerHuevo : MonoBehaviour
             anim.SetTrigger("activar");
             Time.timeScale = 0;
             sonido.Play();
+<<<<<<< HEAD
             gameController.GetComponent<GameController>().ReseteaAnimLlaves();
+=======
+
+            gameControl.GetComponent<GameController>().PasarNivel();
+
+>>>>>>> 3d72eeb491e631a6c9191bce9f0f85869da18c97
             Destroy(gameObject);
         }
     } 

@@ -366,11 +366,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_MethodName: 
+        m_MethodName: CargarM1N4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -465,6 +465,7 @@ GameObject:
   - component: {fileID: 3721278742135089675}
   - component: {fileID: 3721278742135089672}
   - component: {fileID: 881606001298873734}
+  - component: {fileID: 325343615}
   m_Layer: 5
   m_Name: Panel_recuento_llaves
   m_TagString: Untagged
@@ -562,7 +563,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: 86a2b0f2db923fa46a6dcc6564cd4217,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 29c16453d665f414282e8fe73acf95ae, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -647,6 +648,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &325343615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3721278742135089678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ff241d199f34e4899765e72acc3ccb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3721278742212279362
 GameObject:
   m_ObjectHideFlags: 0
