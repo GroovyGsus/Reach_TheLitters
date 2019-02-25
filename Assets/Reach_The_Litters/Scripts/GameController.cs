@@ -8,7 +8,7 @@ public class GameController : MonoBehaviour
 {
     static public int llaves = 0;
 
-    static public int[] nivelMax;
+    static public int[] nivelMax = new[] { 4, 0, 0 };
 
     public bool[] nivelesM1;
 
@@ -31,12 +31,7 @@ public class GameController : MonoBehaviour
 
     Scene escenaActual;
 
-    void Start()
-    {
-        nivelMax[0] = 0;
-        nivelMax[1] = 0;
-        nivelMax[2] = 0;
-    }
+ 
 
     public void Pausa()
     {
