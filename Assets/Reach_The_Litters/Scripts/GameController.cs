@@ -8,6 +8,8 @@ public class GameController : MonoBehaviour
 {
     static public int llaves = 0;
 
+    static public int[] nivelMax;
+
     public bool[] nivelesM1;
 
 
@@ -26,33 +28,15 @@ public class GameController : MonoBehaviour
     private bool pausaDesactivada = true;
 
     //Cosas para desbloquear los niveles
-    public Button[] BotonesM1;
 
-    public int nextLvl = 0;
+    Scene escenaActual;
 
     void Start()
     {
-        int lvlUnlock = PlayerPrefs.GetInt("lvlUnlock", 0);
-
-        for (int i = 0; i < BotonesM1.Length; i++)
-        {
-            if (i > lvlUnlock)
-            {
-                BotonesM1[i].interactable = false;
-            }
-        }
+        nivelMax[0] = 0;
+        nivelMax[1] = 0;
+        nivelMax[2] = 0;
     }
-
-    public void PasarNivel()
-    {
-        if (nextLvl < 4)
-        {
-            nextLvl++;
-            PlayerPrefs.SetInt("lvlUnlock", nextLvl);
-        }
-
-    }
-
 
     public void Pausa()
     {
@@ -268,5 +252,6 @@ public class GameController : MonoBehaviour
     {
         numerodeLlaves();
         //Debug.Log(llaves);
+         
     }
 }
