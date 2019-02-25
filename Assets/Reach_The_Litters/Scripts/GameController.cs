@@ -236,6 +236,11 @@ public class GameController : MonoBehaviour
 
     }
 
+    public void ReseteaAnimLlaves()
+    {
+        PanelLlavesNivelCompletado.SetTrigger("reinicia");
+    }
+
     public void SonidoCogerLlave()
     {
         sonidoCogerLlave.Play();
