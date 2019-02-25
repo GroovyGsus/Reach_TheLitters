@@ -586,11 +586,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 198614352248641158, guid: 1c349d5b6f4868c469b87b17fec43acd,
-        type: 3}
-      propertyPath: m_Name
-      value: GameController
-      objectReference: {fileID: 0}
     - target: {fileID: 198614352248641157, guid: 1c349d5b6f4868c469b87b17fec43acd,
         type: 3}
       propertyPath: MenuPausa
@@ -610,6 +605,11 @@ PrefabInstance:
         type: 3}
       propertyPath: nextLvl
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198614352248641158, guid: 1c349d5b6f4868c469b87b17fec43acd,
+        type: 3}
+      propertyPath: m_Name
+      value: GameController
       objectReference: {fileID: 0}
     - target: {fileID: 198614352248641156, guid: 1c349d5b6f4868c469b87b17fec43acd,
         type: 3}
@@ -957,6 +957,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1569588766, guid: f71aaa4e00719ee40a6527e4e643e39e, type: 3}
+      propertyPath: mundo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1569588766, guid: f71aaa4e00719ee40a6527e4e643e39e, type: 3}
+      propertyPath: nivel
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f71aaa4e00719ee40a6527e4e643e39e, type: 3}
 --- !u!95 &1134217344 stripped
@@ -1043,6 +1051,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 71.725006
       objectReference: {fileID: 0}
+    - target: {fileID: 5718670106160324511, guid: 79b9a20d7eaed754d89ab72cccb14080,
+        type: 3}
+      propertyPath: tiempo
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5718670106160324511, guid: 79b9a20d7eaed754d89ab72cccb14080,
+        type: 3}
+      propertyPath: velMax
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5718670106160324510, guid: 79b9a20d7eaed754d89ab72cccb14080,
         type: 3}
       propertyPath: m_Offset.y
@@ -1063,6 +1081,7 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 1.322684
       objectReference: {fileID: 0}
+<<<<<<< HEAD:Assets/Reach_The_Litters/Scenes/Mundo 2/M2.N3.unity
     - target: {fileID: 5718670106160324511, guid: 79b9a20d7eaed754d89ab72cccb14080,
         type: 3}
       propertyPath: tiempo
@@ -1078,6 +1097,8 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+=======
+>>>>>>> 27b48f22cc2b81cdc417f69e8dd3bfee249058f5:Assets/Reach_The_Litters/Scenes/Mundo2/M2.N3.unity
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79b9a20d7eaed754d89ab72cccb14080, type: 3}
 --- !u!1001 &1601399628

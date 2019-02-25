@@ -133,6 +133,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe28c22970900b64ba519be885b2b268, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameControl: {fileID: 198614352248641158, guid: 1c349d5b6f4868c469b87b17fec43acd,
+    type: 3}
 --- !u!82 &4217344881960695147
 AudioSource:
   m_ObjectHideFlags: 0
@@ -241,4 +243,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2bf53cdda832b949a3d7f6d722867db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoMadyTriste: {fileID: 0}

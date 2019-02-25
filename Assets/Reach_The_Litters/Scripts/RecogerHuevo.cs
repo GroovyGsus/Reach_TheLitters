@@ -6,16 +6,16 @@ using UnityEngine.UI;
 public class RecogerHuevo : MonoBehaviour
 {
     AudioSource sonido;
+    public int nivel = 1;
+    public int mundo = 0;
     GameObject NivelCompletado;
     Animator anim;
-    public GameObject gameController;
-   
+
+    public GameObject gameControl;
 
     void Start()
     {
         sonido = GetComponent<AudioSource>();
-
-        gameController = GameObject.FindGameObjectWithTag("GameController");
 
         NivelCompletado = GameObject.Find("panel_NivelCompletado");
         if (NivelCompletado == null)
@@ -38,13 +38,15 @@ public class RecogerHuevo : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-
+           
             anim.SetTrigger("activar");
             Time.timeScale = 0;
             sonido.Play();
-            gameController.GetComponent<GameController>().ReseteaAnimLlaves();
-            gameController.GetComponent<GameController>().PasarNivel();
+
+            GameController.nivelMax[mundo] = nivel;
+
             Destroy(gameObject);
         }
-    } 
+          
+    }
 }
