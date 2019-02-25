@@ -23,11 +23,14 @@ public class EstirarWissel : MonoBehaviour
 
     private Vector3 posicionInicial;
 
+    AudioSource sonido;
+
     void Start()
     {
         wis = GetComponent<Rigidbody2D>();
         estirado = false;
         posicionInicial = transform.position;
+        sonido = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -76,6 +79,7 @@ public class EstirarWissel : MonoBehaviour
     private void OnMouseDown()
     {
         wis.bodyType = RigidbodyType2D.Dynamic;
+        sonido.Play();
 
         if (!estirado)
         {
