@@ -199,21 +199,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameController
       objectReference: {fileID: 0}
-    - target: {fileID: 198614352248641157, guid: 1c349d5b6f4868c469b87b17fec43acd,
-        type: 3}
-      propertyPath: PanelLlavesNivelCompletado
-      value: 
-      objectReference: {fileID: 1484932114}
-    - target: {fileID: 198614352248641157, guid: 1c349d5b6f4868c469b87b17fec43acd,
-        type: 3}
-      propertyPath: MenuPausa
-      value: 
-      objectReference: {fileID: 503348442}
-    - target: {fileID: 198614352248641157, guid: 1c349d5b6f4868c469b87b17fec43acd,
-        type: 3}
-      propertyPath: PanelLlaves
-      value: 
-      objectReference: {fileID: 1708838}
     - target: {fileID: 198614352248641156, guid: 1c349d5b6f4868c469b87b17fec43acd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -269,6 +254,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 198614352248641157, guid: 1c349d5b6f4868c469b87b17fec43acd,
+        type: 3}
+      propertyPath: PanelLlavesNivelCompletado
+      value: 
+      objectReference: {fileID: 1484932114}
+    - target: {fileID: 198614352248641157, guid: 1c349d5b6f4868c469b87b17fec43acd,
+        type: 3}
+      propertyPath: MenuPausa
+      value: 
+      objectReference: {fileID: 503348442}
+    - target: {fileID: 198614352248641157, guid: 1c349d5b6f4868c469b87b17fec43acd,
+        type: 3}
+      propertyPath: PanelLlaves
+      value: 
+      objectReference: {fileID: 1708838}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c349d5b6f4868c469b87b17fec43acd, type: 3}
 --- !u!114 &217456095 stripped
@@ -580,6 +580,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: huevo
       objectReference: {fileID: 0}
+    - target: {fileID: 1451742507405528127, guid: f71aaa4e00719ee40a6527e4e643e39e,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1451742507405528065, guid: f71aaa4e00719ee40a6527e4e643e39e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -637,12 +642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1569588766, guid: f71aaa4e00719ee40a6527e4e643e39e, type: 3}
       propertyPath: nivel
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1451742507405528127, guid: f71aaa4e00719ee40a6527e4e643e39e,
-        type: 3}
-      propertyPath: m_BodyType
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f71aaa4e00719ee40a6527e4e643e39e, type: 3}
@@ -763,11 +763,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1252927836926095545, guid: 431bcf13eedcd864cb5092ac4e04077d,
-        type: 3}
-      propertyPath: m_RaycastTarget
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1252927838024066494, guid: 431bcf13eedcd864cb5092ac4e04077d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -787,6 +782,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: CargarSeleccionMundo
+      objectReference: {fileID: 0}
+    - target: {fileID: 1252927836926095545, guid: 431bcf13eedcd864cb5092ac4e04077d,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 431bcf13eedcd864cb5092ac4e04077d, type: 3}

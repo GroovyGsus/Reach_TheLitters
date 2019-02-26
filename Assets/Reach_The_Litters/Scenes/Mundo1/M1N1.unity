@@ -1127,21 +1127,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameController
       objectReference: {fileID: 0}
-    - target: {fileID: 198614352248641157, guid: 1c349d5b6f4868c469b87b17fec43acd,
-        type: 3}
-      propertyPath: MenuPausa
-      value: 
-      objectReference: {fileID: 259667192}
-    - target: {fileID: 198614352248641157, guid: 1c349d5b6f4868c469b87b17fec43acd,
-        type: 3}
-      propertyPath: PanelLlaves
-      value: 
-      objectReference: {fileID: 1936788876}
-    - target: {fileID: 198614352248641157, guid: 1c349d5b6f4868c469b87b17fec43acd,
-        type: 3}
-      propertyPath: PanelLlavesNivelCompletado
-      value: 
-      objectReference: {fileID: 3377348}
     - target: {fileID: 198614352248641156, guid: 1c349d5b6f4868c469b87b17fec43acd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1197,6 +1182,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 198614352248641157, guid: 1c349d5b6f4868c469b87b17fec43acd,
+        type: 3}
+      propertyPath: MenuPausa
+      value: 
+      objectReference: {fileID: 259667192}
+    - target: {fileID: 198614352248641157, guid: 1c349d5b6f4868c469b87b17fec43acd,
+        type: 3}
+      propertyPath: PanelLlaves
+      value: 
+      objectReference: {fileID: 1936788876}
+    - target: {fileID: 198614352248641157, guid: 1c349d5b6f4868c469b87b17fec43acd,
+        type: 3}
+      propertyPath: PanelLlavesNivelCompletado
+      value: 
+      objectReference: {fileID: 3377348}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c349d5b6f4868c469b87b17fec43acd, type: 3}
 --- !u!1001 &1338820747
@@ -1414,6 +1414,10 @@ PrefabInstance:
       propertyPath: sonidoMadyTriste
       value: 
       objectReference: {fileID: 133993310}
+    - target: {fileID: 1569588766, guid: f71aaa4e00719ee40a6527e4e643e39e, type: 3}
+      propertyPath: nivel
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f71aaa4e00719ee40a6527e4e643e39e, type: 3}
 --- !u!1001 &1523154731

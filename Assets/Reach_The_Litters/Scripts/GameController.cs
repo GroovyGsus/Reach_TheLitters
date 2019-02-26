@@ -8,7 +8,7 @@ public class GameController : MonoBehaviour
 {
     static public int llaves = 0;
 
-    static public int[] nivelMax = new[] { 4, 0, 0 };
+    static public int[] nivelMax = new[] { 1, 0, 0 };
 
     public bool[] nivelesM1;
 
