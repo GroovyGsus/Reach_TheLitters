@@ -21,6 +21,9 @@ public class GameController : MonoBehaviour
     public Animator PanelLlavesNivelCompletado;
     int mundo = 1;
 
+    +GameObject botonPausa;
+    GameObject panelLlaves;
+
     public Animator ticketM1;
 
     public AudioSource sonidoCogerLlave;
@@ -38,9 +41,19 @@ public class GameController : MonoBehaviour
         MenuPausa.SetBool("Pausa", pausaDesactivada);
 
         if (pausaDesactivada)
+        {
             Time.timeScale = 0;
+            botonPausa.active = false;
+            panelLlaves.active = false;
+        }
+
         else
+        {
             Time.timeScale = 1;
+            botonPausa.active = true;
+            panelLlaves.active = true;
+        }
+            
 
         pausaDesactivada = !pausaDesactivada;
         Debug.Log("Pausado!");
