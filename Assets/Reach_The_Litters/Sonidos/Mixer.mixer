@@ -15,10 +15,13 @@ AudioMixerController:
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
-  m_ExposedParameters: []
+  m_ExposedParameters:
+  - guid: 1fec2196c880d0c4f80463464b54262a
+    name: Volumen
   m_AudioMixerGroupViews:
   - guids:
     - 0ba35bdfe8c711141984ae55104b1119
+    - c07ed31d68e34c54797376d874a85552
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -31,7 +34,8 @@ AudioMixerGroupController:
   m_Name: Master
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 0ba35bdfe8c711141984ae55104b1119
-  m_Children: []
+  m_Children:
+  - {fileID: 243817276723291860}
   m_Volume: 44a8f08f859edd446b9c0acd8d07242c
   m_Pitch: 3dc6137450d784c46bd1d51de9570323
   m_Effects:
@@ -67,3 +71,35 @@ AudioMixerSnapshotController:
     3dc6137450d784c46bd1d51de9570323: 1.82
     44a8f08f859edd446b9c0acd8d07242c: 8.2
   m_TransitionOverrides: {}
+--- !u!243 &243817276723291860
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sonido
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: c07ed31d68e34c54797376d874a85552
+  m_Children: []
+  m_Volume: 1fec2196c880d0c4f80463464b54262a
+  m_Pitch: ed089d808438d6c43a5be713abf21b07
+  m_Effects:
+  - {fileID: 244515456705228114}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &244515456705228114
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 4e86ec271ff4a294082f1963d1e29481
+  m_EffectName: Attenuation
+  m_MixLevel: a8bf656e03902f441ba3e479681d2ef6
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0

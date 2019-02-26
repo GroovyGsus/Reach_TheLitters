@@ -21,6 +21,9 @@ public class GameController : MonoBehaviour
     Animator PanelLlavesNivelCompletado;
     int mundo = 1;
 
+    GameObject botonPausa;
+    GameObject panelLlaves;
+
     public Animator ticketM1;
 
     public AudioSource sonidoCogerLlave;
@@ -34,6 +37,8 @@ public class GameController : MonoBehaviour
 
     public void Start()
     {
+        botonPausa = GameObject.Find("BotonPausa");
+        panelLlaves = GameObject.Find("PanelLlaves");
         PanelLlavesNivelCompletado = GameObject.Find("Panel_recuento_llaves").GetComponent<Animator>();
     }
     public void Pausa()
@@ -41,9 +46,19 @@ public class GameController : MonoBehaviour
         MenuPausa.SetBool("Pausa", pausaDesactivada);
 
         if (pausaDesactivada)
+        {
             Time.timeScale = 0;
+            botonPausa.active = false;
+            panelLlaves.active = false;
+        }
+
         else
+        {
             Time.timeScale = 1;
+            botonPausa.active = true;
+            panelLlaves.active = true;
+        }
+            
 
         pausaDesactivada = !pausaDesactivada;
         Debug.Log("Pausado!");
