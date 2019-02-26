@@ -39,12 +39,13 @@ public class RecogerHuevo : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
            
+
             anim.SetTrigger("activar");
             Time.timeScale = 0;
             sonido.Play();
 
             GameController.nivelMax[mundo] = nivel;
-
+            gameControl.GetComponent<GameController>().ReseteaAnimLlaves();
             Destroy(gameObject);
         }
           

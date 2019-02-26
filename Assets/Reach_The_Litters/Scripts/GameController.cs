@@ -18,7 +18,7 @@ public class GameController : MonoBehaviour
     public Animator cartelMundos;
     public Animator MenuPausa;
     public Animator PanelLlaves;
-    public Animator PanelLlavesNivelCompletado;
+    Animator PanelLlavesNivelCompletado;
     int mundo = 1;
 
     public Animator ticketM1;
@@ -31,8 +31,11 @@ public class GameController : MonoBehaviour
 
     Scene escenaActual;
 
- 
 
+    public void Start()
+    {
+        PanelLlavesNivelCompletado = GameObject.Find("Panel_recuento_llaves").GetComponent<Animator>();
+    }
     public void Pausa()
     {
         MenuPausa.SetBool("Pausa", pausaDesactivada);
