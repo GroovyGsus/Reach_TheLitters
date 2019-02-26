@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class DesbloquearNivel : MonoBehaviour
 {
 
-   Button boton;
+    Button boton;
     public int nivel;
     public int mundo;
        
