@@ -11,13 +11,14 @@ public class RecogerHuevo : MonoBehaviour
     GameObject NivelCompletado;
     Animator anim;
 
-    public GameObject gameControl;
+    GameObject gameControl;
 
     void Start()
     {
         sonido = GetComponent<AudioSource>();
 
         NivelCompletado = GameObject.Find("panel_NivelCompletado");
+        gameControl = GameObject.Find("GameController");
         if (NivelCompletado == null)
         {
             Debug.LogError("Hace falta tener el objeto Panel_NivelCompletado en la escena", gameObject);
@@ -50,6 +51,7 @@ public class RecogerHuevo : MonoBehaviour
             }
             
             gameControl.GetComponent<GameController>().ReseteaAnimLlaves();
+            gameControl.GetComponent<GameController>().OcultaInterfaz();
             Destroy(gameObject);
         }
           

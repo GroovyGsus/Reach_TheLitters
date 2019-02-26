@@ -48,15 +48,13 @@ public class GameController : MonoBehaviour
         if (pausaDesactivada)
         {
             Time.timeScale = 0;
-            botonPausa.active = false;
-            panelLlaves.active = false;
+            OcultaInterfaz();
         }
 
         else
         {
             Time.timeScale = 1;
-            botonPausa.active = true;
-            panelLlaves.active = true;
+            ActivaInterfaz();
         }
             
 
@@ -64,6 +62,17 @@ public class GameController : MonoBehaviour
         Debug.Log("Pausado!");
     }
 
+    public void OcultaInterfaz ()
+    {
+        botonPausa.active = false;
+        panelLlaves.active = false;
+    }
+
+    public void ActivaInterfaz ()
+    {
+        botonPausa.active = true;
+        panelLlaves.active = true;
+    }
     public void Reinicio()
     {
         llaves = 0;
