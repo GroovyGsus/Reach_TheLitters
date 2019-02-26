@@ -21,7 +21,7 @@ public class GameController : MonoBehaviour
     Animator PanelLlavesNivelCompletado;
     int mundo = 1;
 
-    +GameObject botonPausa;
+    GameObject botonPausa;
     GameObject panelLlaves;
 
     public Animator ticketM1;
@@ -37,6 +37,8 @@ public class GameController : MonoBehaviour
 
     public void Start()
     {
+        botonPausa = GameObject.Find("BotonPausa");
+        panelLlaves = GameObject.Find("PanelLlaves");
         PanelLlavesNivelCompletado = GameObject.Find("Panel_recuento_llaves").GetComponent<Animator>();
     }
     public void Pausa()
