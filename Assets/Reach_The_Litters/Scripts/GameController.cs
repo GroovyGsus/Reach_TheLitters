@@ -14,7 +14,7 @@ public class GameController : MonoBehaviour
     public Animator panelTickets;
     public Animator cartelMundos;
     public Animator MenuPausa;
-    public Animator PanelLlaves;
+    public Animator PanelLlavesAnimator;
     Animator PanelLlavesNivelCompletado;
     int mundo = 1;
 
@@ -54,9 +54,9 @@ public class GameController : MonoBehaviour
 
     public void Start()
     {
-        botonPausa = GameObject.Find("BotonPausa");
-        panelLlaves = GameObject.Find("PanelLlaves");
-        PanelLlavesNivelCompletado = GameObject.Find("Panel_recuento_llaves").GetComponent<Animator>();
+        
+       
+        
     }
     public void Pausa()
     {
@@ -265,9 +265,13 @@ public class GameController : MonoBehaviour
 
     public void numerodeLlaves()
     {
-        if(PanelLlaves!= null) { 
-        PanelLlaves.SetInteger("Numllaves", llaves);
-        PanelLlavesNivelCompletado.SetInteger("llavesRecogidas", llaves);
+        if (PanelLlavesAnimator != null)
+        {
+            PanelLlavesAnimator.SetInteger("Numllaves", llaves);
+            PanelLlavesNivelCompletado.SetInteger("llavesRecogidas", llaves);
+        }
+        else {
+            Debug.Log("PANEL LLAVES ES NULL");
         }
 
     }
@@ -286,8 +290,30 @@ public class GameController : MonoBehaviour
 
     void Update ()
     {
+        
+
+        if (GameObject.Find("Panel_recuento_llaves") && PanelLlavesNivelCompletado == null)
+        {
+            Debug.Log("Encontrado Panel_recuento_llaves");
+            PanelLlavesNivelCompletado = GameObject.Find("Panel_recuento_llaves").GetComponent<Animator>();
+        }
+
+        if (GameObject.Find("BotonPausa") && botonPausa == null)
+        {
+            Debug.Log("Encontrado BotonPausa");
+            botonPausa = GameObject.Find("BotonPausa");
+        }
+
+        if (GameObject.Find("PanelLlaves") && panelLlaves == null)
+        {
+            Debug.Log("Encontrado PanelLlaves " );
+            panelLlaves = GameObject.Find("PanelLlaves");
+            PanelLlavesAnimator = panelLlaves.GetComponent<Animator>();
+        }
+        
+
         numerodeLlaves();
-        //Debug.Log(llaves);
-         
+        Debug.Log(llaves);
+
     }
 }
