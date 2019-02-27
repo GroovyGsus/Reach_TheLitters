@@ -26,7 +26,7 @@ public class RecogeObjeto : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.CompareTag("Huevo") || col.gameObject.CompareTag("Piedras") || col.gameObject.CompareTag("Player"))
+        if ((col.gameObject.CompareTag("Huevo") || col.gameObject.CompareTag("Piedras") || col.gameObject.CompareTag("Player")) && transform.childCount == 1)
         {
 
             llevaObjeto = true;

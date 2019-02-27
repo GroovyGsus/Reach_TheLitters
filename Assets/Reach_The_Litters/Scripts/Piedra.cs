@@ -5,6 +5,7 @@ using UnityEngine;
 public class Piedra : MonoBehaviour
 {
     Rigidbody2D rb;
+    private bool activo = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +20,10 @@ public class Piedra : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.transform.CompareTag("Huevo"))
+        if (col.transform.CompareTag("Huevo") && !activo)
         {
             rb.isKinematic = false;
+            activo = true;
         }
     }
 }
