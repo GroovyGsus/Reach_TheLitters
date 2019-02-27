@@ -10,9 +10,6 @@ public class GameController : MonoBehaviour
 
     static public int[] nivelMax = new[] { 1, 0, 0 };
 
-    public bool[] nivelesM1;
-
-
     public Animator panelSelector;
     public Animator panelTickets;
     public Animator cartelMundos;
@@ -33,6 +30,26 @@ public class GameController : MonoBehaviour
     //Cosas para desbloquear los niveles
 
     Scene escenaActual;
+
+    public static GameController instancia;
+
+
+    private void Awake()
+    {
+
+        if (instancia == null)
+        {
+            instancia = this;
+        }
+
+        else if (instancia != this)
+        {
+            Destroy(gameObject);
+        }
+
+        DontDestroyOnLoad(gameObject);
+
+    }
 
 
     public void Start()
@@ -81,10 +98,7 @@ public class GameController : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void DesbloquearNivel(int nivel)
-    {
-        nivelesM1[nivel] = true;
-    }
+    
 
     public void CargarSeleccionMundo()
     {
