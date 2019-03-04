@@ -14,6 +14,7 @@ public class RompeCuerda : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Coge los diferentes nodos de la cuerda
         sr = GetComponent<SpriteRenderer>();
         jointCuerda = GetComponent<HingeJoint2D>();
         lr = GetComponent<LineRenderer>();
@@ -23,6 +24,7 @@ public class RompeCuerda : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Se dibuja la cuerda
         if (conectado)
         {
             lr.SetPosition(0, transform.position);
@@ -34,7 +36,7 @@ public class RompeCuerda : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-
+        //Cuando la cuerda colisona con el Mouse y además se está pulsando el click izquierdo, se destruye la cuerda y suena el sonido de cuerda rota
         if (col.gameObject.tag == "Mouse" && Input.GetMouseButton(0))
         {
             /*

@@ -25,7 +25,7 @@ public class Plash : MonoBehaviour
 
     private void OnMouseDown()
     {
-        
+        //Cuando se pulsa sobre el delfín, se activa la animacion, se genera una pelota con medio segundo de retraso y se reproduce el sonido del delfin
         cuerpo.SetTrigger("cuerpear");
         cola.SetTrigger("colear");
         Invoke("generaPelota", 0.5f);

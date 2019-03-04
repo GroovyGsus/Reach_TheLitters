@@ -37,6 +37,8 @@ public class RecogerHuevo : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
+        //Cuando el Huevo colisiona con el Player, se activa la animacion de nivel completado, se pausa el juego, y suena el sonido de Maddy feliz. Además de gestionar los niveles del Game Controller, resetear la animacion de llaves de nivel completado y destruir el objeto
+
         if (other.gameObject.tag == "Player")
         {
            

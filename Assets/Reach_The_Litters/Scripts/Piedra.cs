@@ -20,6 +20,7 @@ public class Piedra : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
+        //Sirve para que la piedra no se mueva en la plataforma antes de que el Huevo le toque en el Nivel 4 del Mundo 1
         if (col.transform.CompareTag("Huevo") && !activo)
         {
             rb.isKinematic = false;

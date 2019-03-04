@@ -26,6 +26,8 @@ public class RecogeObjeto : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
+        //Sirve para que Tuit recoja los objetos con el tag Huevo, Piedras y Player
+
         if ((col.gameObject.CompareTag("Huevo") || col.gameObject.CompareTag("Piedras") || col.gameObject.CompareTag("Player")) && transform.childCount == 1)
         {
 
@@ -43,6 +45,7 @@ public class RecogeObjeto : MonoBehaviour
 
     private void OnMouseDown()
     {
+        //Sirve para que al pulsar sobre Tuit suelte el objeto que lleva y que suene el sonido
         if (llevaObjeto && pf.pinchado)
 
         {

@@ -17,6 +17,8 @@ public class llaveRecogida : MonoBehaviour
         //mostramos quien ha tocado el collider de tipo trigger
         Debug.Log(col.gameObject.name);
 
+
+        //Cuando es tocado por el Huevo o el player, suena el sonido de recoger llaves, añade 1 a la variable llaves que está en el GameController y se destruye
         if (col.gameObject.tag == "Huevo" || col.gameObject.tag == "Player")
 
         {

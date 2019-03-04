@@ -25,6 +25,8 @@ public class PinchaGlobos : MonoBehaviour
 
     void OnMouseDown()
     {
+        //Cuando se pulsa sobre el globo, se destruye con un segundo de delay para darle tiempo a hacer la animacion
+
        // rbGlobo.isKinematic = true;
        // rbGlobo.velocity = Vector2.zero;
         anim.SetTrigger("Pinchar");

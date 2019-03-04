@@ -13,6 +13,7 @@ public class DesbloquearNivel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Sirve para bloquear y desbloquear el boton de los niveles si no están desbloqueados
         boton = GetComponent<Button>();
         boton.interactable = false;
         if (GameController.nivelMax[mundo] >= nivel)

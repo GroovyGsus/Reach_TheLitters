@@ -17,6 +17,7 @@ public class SonidoMady : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Maddy pia de forma aleatoria entre 5 y 15 segundos
         if (piar)
         {
             piar = false;
