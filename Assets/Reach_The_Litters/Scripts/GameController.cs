@@ -10,18 +10,17 @@ public class GameController : MonoBehaviour
 
     static public int[] nivelMax = new[] { 1, 0, 0 };
 
-    public Animator panelSelector;
-    public Animator panelTickets;
-    public Animator cartelMundos;
+    
     public Animator MenuPausa;
     public Animator PanelLlavesAnimator;
+    
     Animator PanelLlavesNivelCompletado;
-    int mundo = 1;
+    
 
     GameObject botonPausa;
     GameObject panelLlaves;
 
-    public Animator ticketM1;
+   
 
     public AudioSource sonidoCogerLlave;
 
@@ -51,6 +50,52 @@ public class GameController : MonoBehaviour
 
     }
 
+    void OnEnable()
+    {
+      
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    // called second
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {/*
+        public Animator panelSelector;
+    public Animator panelTickets;
+    public Animator cartelMundos;
+    public Animator MenuPausa;
+    public Animator PanelLlavesAnimator;
+    */
+
+       
+        if (PanelLlavesNivelCompletado == null)
+        {
+            Debug.Log("Encontrado Panel_recuento_llaves");
+            GameObject go_tmp = GameObject.Find("Panel_recuento_llaves");
+            if (go_tmp != null) {
+                PanelLlavesNivelCompletado = go_tmp.GetComponent<Animator>();
+            }
+        }
+
+        if (botonPausa == null)
+        {
+            Debug.Log("Encontrado BotonPausa");
+            botonPausa = GameObject.Find("BotonPausa");
+        }
+
+        if (panelLlaves == null)
+        {
+            Debug.Log("Encontrado PanelLlaves ");
+            panelLlaves = GameObject.Find("PanelLlaves");
+            if(panelLlaves != null) {
+                PanelLlavesAnimator = panelLlaves.GetComponent<Animator>();
+            }
+            
+        }
+
+        numerodeLlaves();
+
+
+    }
 
     public void Start()
     {
@@ -107,44 +152,7 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene("Seleccion_Mundo");
     }
 
-    public void CargarSelecNivelesM1()
-    {
-        Time.timeScale = 1;
-        SelectorMusicaFondo.instancia.suenaMusicaMenu = true;
-        Invoke("CargarNivelesM1", 0.5f);
-    }
-
-    public void CargarSelecNivelesM2()
-    {
-        Time.timeScale = 1;
-        SelectorMusicaFondo.instancia.suenaMusicaMenu = true;
-        Invoke("CargarNivelesM2", 0.5f);
-    }
-
-    public void CargarSelecNivelesM3()
-    {
-        Time.timeScale = 1;
-        SelectorMusicaFondo.instancia.suenaMusicaMenu = true;
-        Invoke("CargarNivelesM3", 0.5f);
-    }
-
-    public void CargarNivelesM1()
-    {
-        
-        SceneManager.LoadScene("SelecNivelM1");
-    }
-
-    public void CargarNivelesM2()
-    {
-
-        SceneManager.LoadScene("SelecNivelM2");
-    }
-
-    public void CargarNivelesM3()
-    {
-
-        SceneManager.LoadScene("SelecNivelM3");
-    }
+   
     public void CargarM1N1()
     {
         SelectorMusicaFondo.instancia.suenaMusicaMenu = false;
@@ -239,29 +247,7 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene("PantallaInicio");
     }
 
-    public void SiguienteMundo()
-    {
-        if (mundo <3)
-        {
-            mundo++;
-            panelSelector.SetInteger("Mundo", mundo);
-            panelTickets.SetInteger("Mundo", mundo);
-            cartelMundos.SetInteger("Mundo", mundo);
-        }
-        
-    }
-
-    public void AnteriorMundo()
-    {
-        if (mundo >1)
-        {
-            mundo--;
-            panelSelector.SetInteger("Mundo", mundo);
-            panelTickets.SetInteger("Mundo", mundo);
-            cartelMundos.SetInteger("Mundo", mundo);
-        }
-        
-    }
+   
 
     public void numerodeLlaves()
     {
@@ -292,28 +278,10 @@ public class GameController : MonoBehaviour
     {
         
 
-        if (GameObject.Find("Panel_recuento_llaves") && PanelLlavesNivelCompletado == null)
-        {
-            Debug.Log("Encontrado Panel_recuento_llaves");
-            PanelLlavesNivelCompletado = GameObject.Find("Panel_recuento_llaves").GetComponent<Animator>();
-        }
+      
 
-        if (GameObject.Find("BotonPausa") && botonPausa == null)
-        {
-            Debug.Log("Encontrado BotonPausa");
-            botonPausa = GameObject.Find("BotonPausa");
-        }
-
-        if (GameObject.Find("PanelLlaves") && panelLlaves == null)
-        {
-            Debug.Log("Encontrado PanelLlaves " );
-            panelLlaves = GameObject.Find("PanelLlaves");
-            PanelLlavesAnimator = panelLlaves.GetComponent<Animator>();
-        }
-        
-
-        numerodeLlaves();
-        Debug.Log(llaves);
+        //numerodeLlaves();
+        //Debug.Log(llaves);
 
     }
 }
