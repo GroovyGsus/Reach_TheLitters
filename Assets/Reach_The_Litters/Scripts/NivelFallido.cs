@@ -15,6 +15,7 @@ public class NivelFallido : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         panelNivelFallido = GameObject.Find("Panel_nivel_fallido");
         scriptSonido =  GameObject.Find("Maddy").GetComponent<SonidoMady>();
         if(panelNivelFallido == null)
@@ -35,6 +36,8 @@ public class NivelFallido : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
+
+        //Cuando Maddy o el Huevo colisionan con el Area de juego, se activa la animacion del menu de nivel fallido, suena el sonido de Maddy triste y se pausa el juego
         if (other.gameObject.tag == "Area_Juego")
         {
             anim.SetTrigger("activar");

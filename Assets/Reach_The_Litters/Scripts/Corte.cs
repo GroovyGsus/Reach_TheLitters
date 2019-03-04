@@ -19,11 +19,10 @@ public class Corte : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (Input.GetMouseButton(1))
-        //{
+        //Esto sirve para que se siga al cursor del ratón todo el rato
         mousePosition = Input.mousePosition;
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
         transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed);
-        //}
+        
     }
 }

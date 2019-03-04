@@ -76,6 +76,7 @@ public class EstirarWissel : MonoBehaviour
        
     }
     
+    //Cuando pulsamos sobre la serpiente, suena el sonido y se estira, si ya estña estirada, se encoge
     private void OnMouseDown()
     {
         wis.bodyType = RigidbodyType2D.Dynamic;
