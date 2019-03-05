@@ -14,11 +14,11 @@ public class GameController : MonoBehaviour
     public Animator MenuPausa;
     public Animator PanelLlavesAnimator;
     
-    Animator PanelLlavesNivelCompletado;
+    public Animator PanelLlavesNivelCompletado;
     
 
-    GameObject botonPausa;
-    GameObject panelLlaves;
+    public GameObject botonPausa;
+    public GameObject panelLlaves;
 
    
 
@@ -65,14 +65,15 @@ public class GameController : MonoBehaviour
     public Animator MenuPausa;
     public Animator PanelLlavesAnimator;
     */
+    
 
-       
         if (PanelLlavesNivelCompletado == null)
         {
             Debug.Log("Encontrado Panel_recuento_llaves");
             GameObject go_tmp = GameObject.Find("Panel_recuento_llaves");
             if (go_tmp != null) {
                 PanelLlavesNivelCompletado = go_tmp.GetComponent<Animator>();
+
             }
         }
 
