@@ -14,6 +14,7 @@ public class SelectorSonidosCamara : MonoBehaviour
 
     private void Awake()
     {
+
         
         if (instancia == null)
         {
@@ -45,7 +46,7 @@ public class SelectorSonidosCamara : MonoBehaviour
 
     public void SonidoPulsarBoton()
     {
-        
+     //Reproduce el sonido de pulsar boton   
         SelectorSonidosCamara.instancia.audCamSon.clip = pulsarBoton;
         SelectorSonidosCamara.instancia.audCamSon.Play();
         
@@ -54,6 +55,7 @@ public class SelectorSonidosCamara : MonoBehaviour
 
     public void SonidoPulsarTicket()
     {
+        //Reproduce el sonido de pulsar el Ticket
         SelectorSonidosCamara.instancia.audCamSon.clip = pulsarTicket;
         SelectorSonidosCamara.instancia.audCamSon.Play();
     }
