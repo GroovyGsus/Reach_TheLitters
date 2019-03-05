@@ -62,7 +62,6 @@ public class GameController : MonoBehaviour
         public Animator panelSelector;
     public Animator panelTickets;
     public Animator cartelMundos;
-    public Animator MenuPausa;
     public Animator PanelLlavesAnimator;
     */
     
@@ -73,6 +72,17 @@ public class GameController : MonoBehaviour
             GameObject go_tmp = GameObject.Find("Panel_recuento_llaves");
             if (go_tmp != null) {
                 PanelLlavesNivelCompletado = go_tmp.GetComponent<Animator>();
+
+            }
+        }
+
+        if (MenuPausa == null)
+        {
+            Debug.Log("Encontrado MenuPausa");
+            GameObject go_tmp = GameObject.Find("MenuPausa");
+            if (go_tmp != null)
+            {
+                MenuPausa = go_tmp.GetComponent<Animator>();
 
             }
         }

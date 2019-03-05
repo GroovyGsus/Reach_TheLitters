@@ -374,31 +374,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6945472393895292283, guid: 3d607ea514744b64a94f33f2666db20e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1728954928}
-    - target: {fileID: 7578410903477271604, guid: 3d607ea514744b64a94f33f2666db20e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1728954928}
-    - target: {fileID: 7578410904754823643, guid: 3d607ea514744b64a94f33f2666db20e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1728954928}
-    - target: {fileID: 8429097799550283573, guid: 3d607ea514744b64a94f33f2666db20e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1728954928}
-    - target: {fileID: 8429097799550283573, guid: 3d607ea514744b64a94f33f2666db20e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CargarPantallaOpciones
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d607ea514744b64a94f33f2666db20e, type: 3}
 --- !u!1001 &614081168
@@ -475,6 +450,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05483207e61fc23479fb78af1904a5f3, type: 3}
+--- !u!114 &674996559 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 674996559, guid: 3d607ea514744b64a94f33f2666db20e,
+    type: 3}
+  m_PrefabInstance: {fileID: 512405723}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beada2a826417a14cacb4818d238d3f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &777703984 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 1451742507405528127, guid: f71aaa4e00719ee40a6527e4e643e39e,
@@ -848,11 +835,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas_nivel_completado
       objectReference: {fileID: 0}
-    - target: {fileID: 3721278741646844085, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3721278741646844081, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -962,17 +944,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1728954928}
+      objectReference: {fileID: 674996559}
     - target: {fileID: 3721278742715802129, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1728954928}
+      objectReference: {fileID: 674996559}
     - target: {fileID: 3721278741988986483, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1728954928}
+      objectReference: {fileID: 674996559}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e, type: 3}
 --- !u!1 &1130751881
@@ -1064,11 +1046,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8282713665940945178, guid: 3f4211dd17896904898d693b0f7cbeaa,
-        type: 3}
-      propertyPath: m_Name
-      value: Cuerda
-      objectReference: {fileID: 0}
     - target: {fileID: 2553948138952851874, guid: 3f4211dd17896904898d693b0f7cbeaa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1123,6 +1100,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282713665940945178, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: m_Name
+      value: Cuerda
       objectReference: {fileID: 0}
     - target: {fileID: 2568310264250720808, guid: 3f4211dd17896904898d693b0f7cbeaa,
         type: 3}
@@ -1647,26 +1629,14 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1728954928}
+      objectReference: {fileID: 674996559}
     - target: {fileID: 1252927836980343606, guid: 431bcf13eedcd864cb5092ac4e04077d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1728954928}
+      objectReference: {fileID: 674996559}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 431bcf13eedcd864cb5092ac4e04077d, type: 3}
---- !u!114 &1728954928 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 198614352248641157, guid: 1c349d5b6f4868c469b87b17fec43acd,
-    type: 3}
-  m_PrefabInstance: {fileID: 1322253859}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf383417ca81716428388175c55b45cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &1936788876 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 7578410904702544137, guid: 3d607ea514744b64a94f33f2666db20e,

@@ -18,18 +18,6 @@ EditorBuildSettings:
     path: Assets/Reach_The_Litters/Scenes/SelecNivelM1.unity
     guid: dec3990085a8ea04794cc5993d47b9ec
   - enabled: 1
-    path: Assets/Reach_The_Litters/Scenes/Mundo1/M1N1.unity
-    guid: 68e2c56b0f330ba44a1cdfdc66ec399d
-  - enabled: 1
-    path: Assets/Reach_The_Litters/Scenes/Mundo1/M1N2.unity
-    guid: a75a9bdc7cc7fbe4b8564dd4d6852374
-  - enabled: 1
-    path: Assets/Reach_The_Litters/Scenes/Mundo1/M1N3.unity
-    guid: 39b5b382d3cdbba47bc76e1337c0b52c
-  - enabled: 1
-    path: Assets/Reach_The_Litters/Scenes/Mundo1/M1N4.unity
-    guid: 781f28513efc1d847998e3222697f476
-  - enabled: 1
     path: Assets/Reach_The_Litters/Scenes/PantallaPrincipal.unity
     guid: 590901b9c323e3943b8f47f853a39e45
   - enabled: 1
@@ -44,6 +32,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Reach_The_Litters/Scenes/SelecNivelM3.unity
     guid: 3a3377722393d2d4299e5d1f89cf3f42
+  - enabled: 1
+    path: Assets/Reach_The_Litters/Scenes/Mundo1/M1N1.unity
+    guid: 68e2c56b0f330ba44a1cdfdc66ec399d
+  - enabled: 1
+    path: Assets/Reach_The_Litters/Scenes/Mundo1/M1N2.unity
+    guid: a75a9bdc7cc7fbe4b8564dd4d6852374
+  - enabled: 1
+    path: Assets/Reach_The_Litters/Scenes/Mundo1/M1N3.unity
+    guid: 39b5b382d3cdbba47bc76e1337c0b52c
+  - enabled: 1
+    path: Assets/Reach_The_Litters/Scenes/Mundo1/M1N4.unity
+    guid: 781f28513efc1d847998e3222697f476
   - enabled: 1
     path: Assets/Reach_The_Litters/Scenes/Mundo2/M2.N1.unity
     guid: acfc4ad8e08549840bb7634040f5c84e
