@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1866777105852474031}
   - component: {fileID: 1287515831}
   - component: {fileID: 1028054310}
+  - component: {fileID: 1253393183}
   m_Layer: 0
   m_Name: Maddy
   m_TagString: Player
@@ -216,6 +217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normal: {fileID: 8300000, guid: 55d386d25ed6d094283d5dda16269804, type: 3}
   triste: {fileID: 8300000, guid: 31e5b2dccbdc4ba4d83ba0bf7f310839, type: 3}
+  ganar: {fileID: 8300000, guid: e3f15ce6564ddc449ba6818f9930a2d5, type: 3}
 --- !u!114 &1287515831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,3 +289,19 @@ PolygonCollider2D:
       - {x: -0.545, y: -0.695}
       - {x: -0.465, y: -0.745}
       - {x: 0.475, y: -0.745}
+--- !u!70 &1253393183
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6352210224099610077}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.030901218, y: 0.053225506}
+  m_Size: {x: 1.7190458, y: 1.5198957}
+  m_Direction: 1

@@ -41,8 +41,8 @@ public class RecogerHuevo : MonoBehaviour
 
         if (other.gameObject.tag == "Player")
         {
-           
 
+            GameObject.Find("Maddy").GetComponent<SonidoMady>().Ganar();
             anim.SetTrigger("activar");
             Time.timeScale = 0;
             sonido.Play();

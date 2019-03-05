@@ -7,6 +7,7 @@ public class SonidoMady : MonoBehaviour
     AudioSource sonido;
     public AudioClip normal;
     public AudioClip triste;
+    public AudioClip ganar;
     bool piar = true;
     // Start is called before the first frame update
     void Start()
@@ -36,6 +37,12 @@ public class SonidoMady : MonoBehaviour
     {
      
         sonido.clip = triste;
+        sonido.Play();
+    }
+
+    public void Ganar()
+    {
+        sonido.clip = ganar;
         sonido.Play();
     }
 }
