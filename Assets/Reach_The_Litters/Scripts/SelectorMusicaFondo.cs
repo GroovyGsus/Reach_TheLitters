@@ -46,12 +46,15 @@ public class SelectorMusicaFondo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+      
         if(suenaMusicaMenu && SelectorMusicaFondo.instancia.audCam.clip != musicaMenu)
         {
             MusicaFondoMenus();
         }
 
+
+
+        //Si no está sonando la musica de menu, suena la musica in game
         if (!suenaMusicaMenu && SelectorMusicaFondo.instancia.audCam.clip != musicaInGameM1)
         {
 
@@ -59,6 +62,9 @@ public class SelectorMusicaFondo : MonoBehaviour
         }
 
     }
+
+
+    //Si no se esta reproduciendo la musica de menu, la reproduce
 
     public void MusicaFondoMenus()
     {
@@ -70,6 +76,9 @@ public class SelectorMusicaFondo : MonoBehaviour
         }
        
     }
+
+
+    //Si no está sonando la musica in game, la reproduce
 
     public void MusicaFondoInGame()
     {

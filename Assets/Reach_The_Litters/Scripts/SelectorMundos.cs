@@ -13,6 +13,7 @@ public class SelectorMundos : MonoBehaviour
 
     void Start()
     {
+
         if (panelSelector == null)
         {
             GameObject go_tmp = GameObject.Find("Panel_Selector");
@@ -41,6 +42,9 @@ public class SelectorMundos : MonoBehaviour
         }
     }
 
+
+    //Pone el tiempo a uno, gestiona la musica y invoca con medio segundo de delay a cargar la seleccion de nivel del respectivo mundo
+
     public void CargarSelecNivelesM1()
     {
         Time.timeScale = 1;
@@ -62,6 +66,9 @@ public class SelectorMundos : MonoBehaviour
         Invoke("CargarNivelesM3", 0.5f);
     }
 
+
+    //Carga la seleccion de niveles del respectivo mundo
+
     public void CargarNivelesM1()
     {
 
@@ -79,6 +86,9 @@ public class SelectorMundos : MonoBehaviour
 
         SceneManager.LoadScene("SelecNivelM3");
     }
+
+
+    //Se mueve entre los diferentes mundos
 
     public void SiguienteMundo()
     {
@@ -103,6 +113,8 @@ public class SelectorMundos : MonoBehaviour
         }
 
     }
+
+    //Carga la pantalla de inicio, pone el tiempo a 1 y gestiona la musica
 
     public void CargarPantallaInicio()
     {
