@@ -569,7 +569,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1808555940}
+      objectReference: {fileID: 832822229}
     - target: {fileID: 1252927838024066494, guid: 431bcf13eedcd864cb5092ac4e04077d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -579,11 +579,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1808555940}
+      objectReference: {fileID: 832822229}
     - target: {fileID: 1252927836980343606, guid: 431bcf13eedcd864cb5092ac4e04077d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CargarSeleccionMundo
+      value: CargarSelecMundo
       objectReference: {fileID: 0}
     - target: {fileID: 1252927836926095545, guid: 431bcf13eedcd864cb5092ac4e04077d,
         type: 3}
@@ -1034,7 +1034,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1808555940}
+      objectReference: {fileID: 832822229}
     - target: {fileID: 6945472393895292283, guid: 3d607ea514744b64a94f33f2666db20e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -1044,7 +1044,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1808555940}
+      objectReference: {fileID: 832822229}
     - target: {fileID: 7578410903477271604, guid: 3d607ea514744b64a94f33f2666db20e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -1054,7 +1054,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1808555940}
+      objectReference: {fileID: 832822229}
     - target: {fileID: 7578410904754823643, guid: 3d607ea514744b64a94f33f2666db20e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -1074,6 +1074,18 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 832822226}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &832822229 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 674996559, guid: 3d607ea514744b64a94f33f2666db20e,
+    type: 3}
+  m_PrefabInstance: {fileID: 832822226}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beada2a826417a14cacb4818d238d3f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &842293437
 GameObject:
   m_ObjectHideFlags: 0
@@ -1937,17 +1949,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1808555940}
+      objectReference: {fileID: 832822229}
     - target: {fileID: 3721278742798907997, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CargarSeleccionMundo
+      value: CargarSelecMundo
       objectReference: {fileID: 0}
     - target: {fileID: 3721278742715802129, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1808555940}
+      objectReference: {fileID: 832822229}
     - target: {fileID: 3721278742715802129, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -1957,11 +1969,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1808555940}
+      objectReference: {fileID: 832822229}
     - target: {fileID: 3721278741988986483, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CargarM3N2
+      value: SiguienteNivel
       objectReference: {fileID: 0}
     - target: {fileID: 3721278741988986483, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
         type: 3}
@@ -2052,11 +2064,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 198614352248641158, guid: 1c349d5b6f4868c469b87b17fec43acd,
-        type: 3}
-      propertyPath: m_Name
-      value: GameController
-      objectReference: {fileID: 0}
     - target: {fileID: 198614352248641157, guid: 1c349d5b6f4868c469b87b17fec43acd,
         type: 3}
       propertyPath: PanelLlavesNivelCompletado
@@ -2072,6 +2079,11 @@ PrefabInstance:
       propertyPath: PanelLlaves
       value: 
       objectReference: {fileID: 832822227}
+    - target: {fileID: 198614352248641158, guid: 1c349d5b6f4868c469b87b17fec43acd,
+        type: 3}
+      propertyPath: m_Name
+      value: GameController
+      objectReference: {fileID: 0}
     - target: {fileID: 198614352248641156, guid: 1c349d5b6f4868c469b87b17fec43acd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2129,18 +2141,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c349d5b6f4868c469b87b17fec43acd, type: 3}
---- !u!114 &1808555940 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 198614352248641157, guid: 1c349d5b6f4868c469b87b17fec43acd,
-    type: 3}
-  m_PrefabInstance: {fileID: 1808555939}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf383417ca81716428388175c55b45cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1814498244
 GameObject:
   m_ObjectHideFlags: 0

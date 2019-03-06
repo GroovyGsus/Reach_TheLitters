@@ -381,11 +381,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 198614352248641158, guid: 1c349d5b6f4868c469b87b17fec43acd,
-        type: 3}
-      propertyPath: m_Name
-      value: GameController
-      objectReference: {fileID: 0}
     - target: {fileID: 198614352248641157, guid: 1c349d5b6f4868c469b87b17fec43acd,
         type: 3}
       propertyPath: PanelLlavesNivelCompletado
@@ -401,6 +396,11 @@ PrefabInstance:
       propertyPath: MenuPausa
       value: 
       objectReference: {fileID: 777222052}
+    - target: {fileID: 198614352248641158, guid: 1c349d5b6f4868c469b87b17fec43acd,
+        type: 3}
+      propertyPath: m_Name
+      value: GameController
+      objectReference: {fileID: 0}
     - target: {fileID: 198614352248641156, guid: 1c349d5b6f4868c469b87b17fec43acd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -458,18 +458,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c349d5b6f4868c469b87b17fec43acd, type: 3}
---- !u!114 &235793589 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 198614352248641157, guid: 1c349d5b6f4868c469b87b17fec43acd,
-    type: 3}
-  m_PrefabInstance: {fileID: 117718761}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf383417ca81716428388175c55b45cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &252942303
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -946,19 +934,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 235793589}
+      objectReference: {fileID: 569888532}
+    - target: {fileID: 6945472393895292283, guid: 3d607ea514744b64a94f33f2666db20e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Pausa
+      objectReference: {fileID: 0}
     - target: {fileID: 7578410903477271604, guid: 3d607ea514744b64a94f33f2666db20e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 235793589}
+      objectReference: {fileID: 569888532}
+    - target: {fileID: 7578410903477271604, guid: 3d607ea514744b64a94f33f2666db20e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Reinicio
+      objectReference: {fileID: 0}
     - target: {fileID: 7578410904754823643, guid: 3d607ea514744b64a94f33f2666db20e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 235793589}
+      objectReference: {fileID: 569888532}
+    - target: {fileID: 7578410904754823643, guid: 3d607ea514744b64a94f33f2666db20e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Pausa
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d607ea514744b64a94f33f2666db20e, type: 3}
+--- !u!114 &569888532 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 674996559, guid: 3d607ea514744b64a94f33f2666db20e,
+    type: 3}
+  m_PrefabInstance: {fileID: 569888531}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beada2a826417a14cacb4818d238d3f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &697605382
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1252,12 +1267,22 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 235793589}
+      objectReference: {fileID: 569888532}
+    - target: {fileID: 1252927838024066494, guid: 431bcf13eedcd864cb5092ac4e04077d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Reinicio
+      objectReference: {fileID: 0}
     - target: {fileID: 1252927836980343606, guid: 431bcf13eedcd864cb5092ac4e04077d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 235793589}
+      objectReference: {fileID: 569888532}
+    - target: {fileID: 1252927836980343606, guid: 431bcf13eedcd864cb5092ac4e04077d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CargarSelecMundo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 431bcf13eedcd864cb5092ac4e04077d, type: 3}
 --- !u!1 &1157889681
@@ -1512,11 +1537,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8282713665940945178, guid: 3f4211dd17896904898d693b0f7cbeaa,
-        type: 3}
-      propertyPath: m_Name
-      value: Cuerda
-      objectReference: {fileID: 0}
     - target: {fileID: 2553948138952851874, guid: 3f4211dd17896904898d693b0f7cbeaa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1571,6 +1591,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282713665940945178, guid: 3f4211dd17896904898d693b0f7cbeaa,
+        type: 3}
+      propertyPath: m_Name
+      value: Cuerda
       objectReference: {fileID: 0}
     - target: {fileID: 3654152457005605971, guid: 3f4211dd17896904898d693b0f7cbeaa,
         type: 3}
@@ -1869,21 +1894,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 235793589}
+      objectReference: {fileID: 569888532}
+    - target: {fileID: 3721278742798907997, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CargarSelecMundo
+      objectReference: {fileID: 0}
     - target: {fileID: 3721278742715802129, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 235793589}
+      objectReference: {fileID: 569888532}
+    - target: {fileID: 3721278742715802129, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Reinicio
+      objectReference: {fileID: 0}
     - target: {fileID: 3721278741988986483, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 235793589}
+      objectReference: {fileID: 569888532}
     - target: {fileID: 3721278741988986483, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CargarM2N2
+      value: SiguienteNivel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fa83bbb8b2bb134ba212f94d87c2c2e, type: 3}

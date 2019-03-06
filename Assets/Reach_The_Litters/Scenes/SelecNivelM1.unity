@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 10690884}
   - component: {fileID: 10690883}
   - component: {fileID: 10690886}
+  - component: {fileID: 10690887}
   m_Layer: 5
   m_Name: nivel2
   m_TagString: Untagged
@@ -270,6 +271,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nivel: 2
   mundo: 0
+--- !u!95 &10690887
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10690881}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a6d50c84dc8869248807c29882ed1df5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &134008409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -277,11 +297,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1572099986}
     m_Modifications:
-    - target: {fileID: 683808869047101740, guid: 28beb32f1252b514b96828a8c8efbe4c,
-        type: 3}
-      propertyPath: m_Name
-      value: botonAjustes
-      objectReference: {fileID: 0}
     - target: {fileID: 94900396145827039, guid: 28beb32f1252b514b96828a8c8efbe4c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -401,6 +416,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 3.703763
+      objectReference: {fileID: 0}
+    - target: {fileID: 683808869047101740, guid: 28beb32f1252b514b96828a8c8efbe4c,
+        type: 3}
+      propertyPath: m_Name
+      value: botonAjustes
       objectReference: {fileID: 0}
     - target: {fileID: 2148717690088903099, guid: 28beb32f1252b514b96828a8c8efbe4c,
         type: 3}
@@ -803,6 +823,7 @@ GameObject:
   - component: {fileID: 439682607}
   - component: {fileID: 439682606}
   - component: {fileID: 439682609}
+  - component: {fileID: 439682610}
   m_Layer: 5
   m_Name: nivel4
   m_TagString: Untagged
@@ -948,6 +969,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nivel: 4
   mundo: 0
+--- !u!95 &439682610
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439682604}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a6d50c84dc8869248807c29882ed1df5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &561073719
 GameObject:
   m_ObjectHideFlags: 0
@@ -2594,6 +2634,7 @@ GameObject:
   - component: {fileID: 1924584367}
   - component: {fileID: 1924584366}
   - component: {fileID: 1924584369}
+  - component: {fileID: 1924584370}
   m_Layer: 5
   m_Name: 'nivel1 '
   m_TagString: Untagged
@@ -2739,6 +2780,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nivel: 1
   mundo: 0
+--- !u!95 &1924584370
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924584364}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a6d50c84dc8869248807c29882ed1df5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1958684526
 GameObject:
   m_ObjectHideFlags: 0
@@ -2826,6 +2886,7 @@ GameObject:
   - component: {fileID: 1976254727}
   - component: {fileID: 1976254726}
   - component: {fileID: 1976254729}
+  - component: {fileID: 1976254730}
   m_Layer: 5
   m_Name: nivel3
   m_TagString: Untagged
@@ -2971,3 +3032,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nivel: 3
   mundo: 0
+--- !u!95 &1976254730
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976254724}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a6d50c84dc8869248807c29882ed1df5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

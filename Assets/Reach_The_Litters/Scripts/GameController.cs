@@ -291,8 +291,8 @@ public class GameController : MonoBehaviour
 
       
 
-        //numerodeLlaves();
-        //Debug.Log(llaves);
+        numerodeLlaves();
+        Debug.Log(llaves);
 
     }
 }
