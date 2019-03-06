@@ -433,14 +433,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf383417ca81716428388175c55b45cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nivelesM1: 
-  panelSelector: {fileID: 0}
-  panelTickets: {fileID: 0}
-  cartelMundos: {fileID: 0}
   MenuPausa: {fileID: 0}
-  PanelLlaves: {fileID: 0}
+  PanelLlavesAnimator: {fileID: 0}
   PanelLlavesNivelCompletado: {fileID: 0}
-  ticketM1: {fileID: 0}
+  botonPausa: {fileID: 0}
+  panelLlaves: {fileID: 0}
   sonidoCogerLlave: {fileID: 0}
 --- !u!4 &317878088
 Transform:
@@ -469,6 +466,7 @@ GameObject:
   - component: {fileID: 411714738}
   - component: {fileID: 411714737}
   - component: {fileID: 411714740}
+  - component: {fileID: 411714741}
   m_Layer: 5
   m_Name: nivel2
   m_TagString: Untagged
@@ -520,7 +518,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -614,6 +612,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nivel: 2
   mundo: 2
+--- !u!95 &411714741
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411714735}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 68b7b68281aac4f4f9a13517cef24623, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &426729862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -875,6 +892,7 @@ GameObject:
   - component: {fileID: 700138093}
   - component: {fileID: 700138092}
   - component: {fileID: 700138095}
+  - component: {fileID: 700138096}
   m_Layer: 5
   m_Name: 'nivel1 '
   m_TagString: Untagged
@@ -926,7 +944,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1020,6 +1038,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nivel: 1
   mundo: 2
+--- !u!95 &700138096
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700138090}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 68b7b68281aac4f4f9a13517cef24623, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &921325623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1606,11 +1643,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 564625842}
     m_Modifications:
-    - target: {fileID: 683808869047101740, guid: 28beb32f1252b514b96828a8c8efbe4c,
-        type: 3}
-      propertyPath: m_Name
-      value: botonAjustes
-      objectReference: {fileID: 0}
     - target: {fileID: 94900396145827039, guid: 28beb32f1252b514b96828a8c8efbe4c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1730,6 +1762,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 3.703763
+      objectReference: {fileID: 0}
+    - target: {fileID: 683808869047101740, guid: 28beb32f1252b514b96828a8c8efbe4c,
+        type: 3}
+      propertyPath: m_Name
+      value: botonAjustes
       objectReference: {fileID: 0}
     - target: {fileID: 2148717690088903099, guid: 28beb32f1252b514b96828a8c8efbe4c,
         type: 3}

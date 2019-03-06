@@ -47,6 +47,11 @@ public class RecogerHuevo : MonoBehaviour
             Time.timeScale = 0;
             sonido.Play();
 
+            Debug.Log("nivel "+ nivel + "mundo " + mundo);
+
+
+            gameControl.GetComponent<GameController>().GuardarNivel(nivel, mundo);
+
             if(GameController.nivelMax[mundo] < nivel)
             {
                 GameController.nivelMax[mundo] = nivel;

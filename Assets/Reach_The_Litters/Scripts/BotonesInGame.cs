@@ -52,7 +52,7 @@ public class BotonesInGame : MonoBehaviour
         {
             Time.timeScale = 1;
             SceneManager.LoadScene(nextSceneIndex);
-            gc.ReseteaAnimLlaves();
+            gc.LlavesACero();
         }
     }
     

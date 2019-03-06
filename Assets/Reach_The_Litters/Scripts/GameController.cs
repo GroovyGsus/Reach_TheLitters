@@ -8,6 +8,8 @@ public class GameController : MonoBehaviour
 {
     static public int llaves = 0;
 
+    static public int llavesTotales = 0;
+
     static public int[] nivelMax = new[] { 1, 0, 0 };
 
     
@@ -293,6 +295,39 @@ public class GameController : MonoBehaviour
 
         numerodeLlaves();
         Debug.Log(llaves);
+
+    }
+
+    public void LlavesACero()
+    {
+        llaves = 0;
+    }
+
+    public void GuardarNivel(int nivel, int mundo) {
+
+        if (PlayerPrefs.GetInt("llaves_" + nivel + "_" + mundo) < llaves)
+        {
+            llavesTotales += llaves;
+            PlayerPrefs.SetInt("llaves_" + nivel + "_" + mundo, llaves);
+            PlayerPrefs.SetInt("llaves_mundo_" + mundo, llavesTotales);
+            
+            int nivelDesbloqueado = nivel +1;
+            int desbloqueado = 1; // 1 = true
+            PlayerPrefs.SetInt("desbloqueado_mundo_" + mundo + "_nivel_" + nivelDesbloqueado, desbloqueado);
+           
+            PlayerPrefs.Save();
+        }
+
+
+    }
+    
+    
+    public void CargarMundo(int mundo, int totalNivelesMundo) {
+        for (int i = 0; i < totalNivelesMundo; i++) {
+            int desbloqueado = PlayerPrefs.GetInt("desbloqueado_mundo_" + mundo + "_nivel_" + i);
+            // SI desbloqueado = 1 ==> El nivel está desbloqueado
+            // Activar o descativar el boton del nivel
+        }
 
     }
 }
