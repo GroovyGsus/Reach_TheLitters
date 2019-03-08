@@ -6,8 +6,10 @@ public class Helice : MonoBehaviour
 {
     //Declaramos el point effector (que generará la fuerza), una variable tiempo y otra de velocidad máxima
     PointEffector2D poi;
+    Animator anim;
     public float tiempo;
     public float velMax;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +18,8 @@ public class Helice : MonoBehaviour
         poi = GetComponent<PointEffector2D>();
 
         poi.enabled = false;
+
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -37,12 +41,20 @@ public class Helice : MonoBehaviour
     {
         poi.enabled = true;            //Aqui cuando pulsemos el ventilador activamos el point effector
         StartCoroutine(PararMotor());  //Llamamos a la corrutina para que cuando pase el tiempo pare
-        
+
+        anim.SetTrigger("pulsada");
+        //Invoke("parada", 0.5f);
         //mientras la fuerza del point effector sea menor que la máxima, le vamos sumando 1 con cada pulsación, cuando llega a la max se para
         if (poi.forceMagnitude < velMax)   
         {
             poi.forceMagnitude = poi.forceMagnitude + 1;
         }
+        
+    }
+
+    private void parada()
+    {
+        anim.SetBool("pulsada", false);
         
     }
 }
