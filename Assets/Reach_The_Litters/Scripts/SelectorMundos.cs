@@ -11,8 +11,12 @@ public class SelectorMundos : MonoBehaviour
     public Animator panelTickets;
     public Animator cartelMundos;
 
+    GameController gc;
+
     void Start()
     {
+
+        gc = GameObject.Find("GameController").GetComponent<GameController>();
 
         if (panelSelector == null)
         {
@@ -50,6 +54,7 @@ public class SelectorMundos : MonoBehaviour
         Time.timeScale = 1;
         SelectorMusicaFondo.instancia.suenaMusicaMenu = true;
         Invoke("CargarNivelesM1", 0.5f);
+        //gc.CargarMundo(1,4);
     }
 
     public void CargarSelecNivelesM2()
@@ -57,6 +62,7 @@ public class SelectorMundos : MonoBehaviour
         Time.timeScale = 1;
         SelectorMusicaFondo.instancia.suenaMusicaMenu = true;
         Invoke("CargarNivelesM2", 0.5f);
+        //gc.CargarMundo(2,3);
     }
 
     public void CargarSelecNivelesM3()
@@ -64,6 +70,7 @@ public class SelectorMundos : MonoBehaviour
         Time.timeScale = 1;
         SelectorMusicaFondo.instancia.suenaMusicaMenu = true;
         Invoke("CargarNivelesM3", 0.5f);
+        //gc.CargarMundo(3,2);
     }
 
 

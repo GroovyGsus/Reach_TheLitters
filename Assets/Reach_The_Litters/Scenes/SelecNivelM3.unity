@@ -1419,7 +1419,7 @@ GameObject:
   - component: {fileID: 1335116116}
   - component: {fileID: 1335116115}
   m_Layer: 5
-  m_Name: Text
+  m_Name: llavesTotales
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1643,6 +1643,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 564625842}
     m_Modifications:
+    - target: {fileID: 683808869047101740, guid: 28beb32f1252b514b96828a8c8efbe4c,
+        type: 3}
+      propertyPath: m_Name
+      value: botonAjustes
+      objectReference: {fileID: 0}
     - target: {fileID: 94900396145827039, guid: 28beb32f1252b514b96828a8c8efbe4c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1762,11 +1767,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 3.703763
-      objectReference: {fileID: 0}
-    - target: {fileID: 683808869047101740, guid: 28beb32f1252b514b96828a8c8efbe4c,
-        type: 3}
-      propertyPath: m_Name
-      value: botonAjustes
       objectReference: {fileID: 0}
     - target: {fileID: 2148717690088903099, guid: 28beb32f1252b514b96828a8c8efbe4c,
         type: 3}

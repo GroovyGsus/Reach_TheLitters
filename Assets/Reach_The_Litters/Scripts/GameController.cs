@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour
 
     static public int llavesTotales = 0;
 
-    static public int[] nivelMax = new[] { 1, 0, 0 };
+    static public int[] nivelMax = new[] { 1, 1, 1 };
 
     
     public Animator MenuPausa;
@@ -22,8 +22,6 @@ public class GameController : MonoBehaviour
     public GameObject botonPausa;
     public GameObject panelLlaves;
 
-   
-
     public AudioSource sonidoCogerLlave;
 
     private bool pausaDesactivada = true;
@@ -33,7 +31,7 @@ public class GameController : MonoBehaviour
     Scene escenaActual;
 
     public static GameController instancia;
-
+   
 
     private void Awake()
     {
@@ -49,7 +47,7 @@ public class GameController : MonoBehaviour
         }
 
         DontDestroyOnLoad(gameObject);
-
+        llavesTotales = PlayerPrefs.GetInt("llaves_totales");
     }
 
     void OnEnable()
@@ -60,12 +58,7 @@ public class GameController : MonoBehaviour
 
     // called second
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {/*
-        public Animator panelSelector;
-    public Animator panelTickets;
-    public Animator cartelMundos;
-    public Animator PanelLlavesAnimator;
-    */
+    {
     
 
         if (PanelLlavesNivelCompletado == null)
@@ -112,9 +105,17 @@ public class GameController : MonoBehaviour
 
     public void Start()
     {
-        
-       
-        
+     /*   if (PlayerPrefs.HasKey("llaves_totales")) { 
+            llavesTotales = PlayerPrefs.GetInt("llaves_totales");
+        }
+        else
+        {
+            llavesTotales = 0;
+            PlayerPrefs.SetInt("llaves_totales", llavesTotales);
+        }
+     */
+
+
     }
     public void Pausa()
     {
@@ -304,30 +305,27 @@ public class GameController : MonoBehaviour
     }
 
     public void GuardarNivel(int nivel, int mundo) {
-
-        if (PlayerPrefs.GetInt("llaves_" + nivel + "_" + mundo) < llaves)
+        int llavesNivel = PlayerPrefs.GetInt("llaves_" + nivel + "_" + mundo);
+        if ( llavesNivel < llaves)
         {
-            llavesTotales += llaves;
+            llavesTotales += llaves - llavesNivel;
             PlayerPrefs.SetInt("llaves_" + nivel + "_" + mundo, llaves);
-            PlayerPrefs.SetInt("llaves_mundo_" + mundo, llavesTotales);
-            
-            int nivelDesbloqueado = nivel +1;
-            int desbloqueado = 1; // 1 = true
-            PlayerPrefs.SetInt("desbloqueado_mundo_" + mundo + "_nivel_" + nivelDesbloqueado, desbloqueado);
-           
+            PlayerPrefs.SetInt("llaves_totales", llavesTotales);                                
             PlayerPrefs.Save();
         }
 
 
     }
     
-    
+    /*
     public void CargarMundo(int mundo, int totalNivelesMundo) {
         for (int i = 0; i < totalNivelesMundo; i++) {
             int desbloqueado = PlayerPrefs.GetInt("desbloqueado_mundo_" + mundo + "_nivel_" + i);
+            
             // SI desbloqueado = 1 ==> El nivel está desbloqueado
             // Activar o descativar el boton del nivel
+
         }
 
-    }
+    }*/
 }
