@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour
 
     static public int llavesTotales = 0;
 
-    static public int[] nivelMax = new[] { 1, 1, 1 };
+    static public int[] nivelMax = new[] { 1, 0, 0 };
 
     
     public Animator MenuPausa;
@@ -24,7 +24,7 @@ public class GameController : MonoBehaviour
 
     public AudioSource sonidoCogerLlave;
 
-    private bool pausaDesactivada = true;
+    public bool pausa = false;
 
     //Cosas para desbloquear los niveles
 
@@ -48,6 +48,9 @@ public class GameController : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
         llavesTotales = PlayerPrefs.GetInt("llaves_totales");
+        nivelMax[0] = PlayerPrefs.GetInt("nivelMax0");
+        nivelMax[1] = PlayerPrefs.GetInt("nivelMax1");
+        nivelMax[2] = PlayerPrefs.GetInt("nivelMax2");
     }
 
     void OnEnable()
@@ -97,7 +100,7 @@ public class GameController : MonoBehaviour
             }
             
         }
-
+        pausa = false;
         numerodeLlaves();
 
 
@@ -105,23 +108,16 @@ public class GameController : MonoBehaviour
 
     public void Start()
     {
-     /*   if (PlayerPrefs.HasKey("llaves_totales")) { 
-            llavesTotales = PlayerPrefs.GetInt("llaves_totales");
-        }
-        else
-        {
-            llavesTotales = 0;
-            PlayerPrefs.SetInt("llaves_totales", llavesTotales);
-        }
-     */
+       //PlayerPrefs.DeleteAll();
 
 
     }
     public void Pausa()
     {
-        MenuPausa.SetBool("Pausa", pausaDesactivada);
+        pausa = !pausa;
+        MenuPausa.SetBool("Pausa", pausa);
 
-        if (pausaDesactivada)
+        if (pausa)
         {
             Time.timeScale = 0;
             OcultaInterfaz();
@@ -134,7 +130,7 @@ public class GameController : MonoBehaviour
         }
             
 
-        pausaDesactivada = !pausaDesactivada;
+     
         Debug.Log("Pausado!");
     }
 
@@ -151,6 +147,7 @@ public class GameController : MonoBehaviour
     }
     public void Reinicio()
     {
+        pausa = false;
         llaves = 0;
         PanelLlavesNivelCompletado.SetInteger("llavesRecogidas", llaves);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -161,6 +158,7 @@ public class GameController : MonoBehaviour
 
     public void CargarSeleccionMundo()
     {
+        CompruebaMundosDesbloqueados();
         Time.timeScale = 1;
         SelectorMusicaFondo.instancia.suenaMusicaMenu = true;
         SceneManager.LoadScene("Seleccion_Mundo");
@@ -311,10 +309,36 @@ public class GameController : MonoBehaviour
             llavesTotales += llaves - llavesNivel;
             PlayerPrefs.SetInt("llaves_" + nivel + "_" + mundo, llaves);
             PlayerPrefs.SetInt("llaves_totales", llavesTotales);                                
-            PlayerPrefs.Save();
+          
         }
 
 
+        nivelMax[mundo] = PlayerPrefs.GetInt("nivelMax"+mundo);
+        if(nivelMax[mundo]< nivel)
+        {
+            PlayerPrefs.SetInt("nivelMax"+mundo,nivel);
+            nivelMax[mundo] = nivel;
+        }
+       
+        PlayerPrefs.Save();
+    }
+
+    public void CompruebaMundosDesbloqueados()
+    {
+        nivelMax[0] = 1;
+        PlayerPrefs.SetInt("nivelMax0", 1);
+
+        if (llavesTotales >= 8 && nivelMax[1] == 0)
+        {
+            nivelMax[1] = 1;
+            PlayerPrefs.SetInt("nivelMax1",1);
+        }
+
+        if (llavesTotales >= 14 && nivelMax[2] == 0)
+        {
+            nivelMax[2] = 1;
+            PlayerPrefs.SetInt("nivelMax2", 1);
+        }
     }
     
     /*
