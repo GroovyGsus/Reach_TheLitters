@@ -20,6 +20,7 @@ public class DesbloquearNivel : MonoBehaviour
         //Sirve para bloquear y desbloquear el boton de los niveles si no están desbloqueados
         boton = GetComponent<Button>();
         boton.interactable = false;
+        Debug.Log(transform.name + " " + mundo + ":" + GameController.nivelMax[mundo]);
         if (GameController.nivelMax[mundo] >= nivel)
         {
             boton.interactable = true;

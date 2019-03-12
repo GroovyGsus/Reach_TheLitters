@@ -439,6 +439,7 @@ MonoBehaviour:
   botonPausa: {fileID: 0}
   panelLlaves: {fileID: 0}
   sonidoCogerLlave: {fileID: 0}
+  pausa: 0
 --- !u!4 &317878088
 Transform:
   m_ObjectHideFlags: 0
@@ -1418,6 +1419,7 @@ GameObject:
   - component: {fileID: 1335116117}
   - component: {fileID: 1335116116}
   - component: {fileID: 1335116115}
+  - component: {fileID: 1335116118}
   m_Layer: 5
   m_Name: llavesTotales
   m_TagString: Untagged
@@ -1501,6 +1503,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1335116113}
   m_CullTransparentMesh: 0
+--- !u!114 &1335116118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335116113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68a503563e8262244998a474d9843c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1341969304
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -108,7 +108,8 @@ public class GameController : MonoBehaviour
 
     public void Start()
     {
-       //PlayerPrefs.DeleteAll();
+        //PlayerPrefs.DeleteAll();
+        CompruebaMundosDesbloqueados();
 
 
     }
@@ -325,8 +326,12 @@ public class GameController : MonoBehaviour
 
     public void CompruebaMundosDesbloqueados()
     {
-        nivelMax[0] = 1;
-        PlayerPrefs.SetInt("nivelMax0", 1);
+        if(nivelMax[0] == 0)
+        {
+            nivelMax[0] = 1;
+            PlayerPrefs.SetInt("nivelMax0", 1);
+        }
+        
 
         if (llavesTotales >= 8 && nivelMax[1] == 0)
         {
