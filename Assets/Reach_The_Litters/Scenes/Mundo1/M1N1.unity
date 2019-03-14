@@ -1155,11 +1155,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 198614352248641158, guid: 1c349d5b6f4868c469b87b17fec43acd,
-        type: 3}
-      propertyPath: m_Name
-      value: GameController
-      objectReference: {fileID: 0}
     - target: {fileID: 198614352248641157, guid: 1c349d5b6f4868c469b87b17fec43acd,
         type: 3}
       propertyPath: MenuPausa
@@ -1174,6 +1169,11 @@ PrefabInstance:
         type: 3}
       propertyPath: PanelLlavesNivelCompletado
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 198614352248641158, guid: 1c349d5b6f4868c469b87b17fec43acd,
+        type: 3}
+      propertyPath: m_Name
+      value: GameController
       objectReference: {fileID: 0}
     - target: {fileID: 198614352248641156, guid: 1c349d5b6f4868c469b87b17fec43acd,
         type: 3}

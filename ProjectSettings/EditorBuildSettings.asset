@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/Reach_The_Litters/Scenes/PantallaPrincipal.unity
+    guid: 590901b9c323e3943b8f47f853a39e45
+  - enabled: 0
     path: Assets/Reach_The_Litters/Sandbox/Mario_pruebas/pruebaBotones.unity
     guid: a6d086a90722d774d875c0369f25cd9f
   - enabled: 1
@@ -17,9 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Reach_The_Litters/Scenes/SelecNivelM1.unity
     guid: dec3990085a8ea04794cc5993d47b9ec
-  - enabled: 1
-    path: Assets/Reach_The_Litters/Scenes/PantallaPrincipal.unity
-    guid: 590901b9c323e3943b8f47f853a39e45
   - enabled: 1
     path: Assets/Reach_The_Litters/Scenes/PantallaOpciones.unity
     guid: 1a19aa821c1a3694a97fc9deb2f4e4c7
