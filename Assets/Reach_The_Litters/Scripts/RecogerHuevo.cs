@@ -49,7 +49,7 @@ public class RecogerHuevo : MonoBehaviour
 
             Debug.Log("nivel "+ nivel + "mundo " + mundo);
 
-
+        //Registramos la información necesaria para bloquear y desbloquear niveles
             gameControl.GetComponent<GameController>().GuardarNivel(nivel, mundo);
 
             if(GameController.nivelMax[mundo] < nivel)

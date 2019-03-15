@@ -15,7 +15,7 @@ public class SelectorMundos : MonoBehaviour
 
     void Start()
     {
-
+        //Buscamos los elementos de la escena que necesitamos para las posteriores funciones
         gc = GameObject.Find("GameController").GetComponent<GameController>();
 
         if (panelSelector == null)
@@ -47,7 +47,7 @@ public class SelectorMundos : MonoBehaviour
     }
 
 
-    //Pone el tiempo a uno, gestiona la musica y invoca con medio segundo de delay a cargar la seleccion de nivel del respectivo mundo
+    //Pone el tiempo a uno, gestiona la musica e invoca con medio segundo de delay a cargar la seleccion de nivel del respectivo mundo
 
     public void CargarSelecNivelesM1()
     {

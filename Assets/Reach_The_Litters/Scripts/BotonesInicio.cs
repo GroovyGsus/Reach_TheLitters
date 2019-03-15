@@ -5,17 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class BotonesInicio : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    // Este script es una especie de GameCOntroller que gestiona los botones de la pantalla de inicio
 
     public void CargarSeleccionMundo()
     {

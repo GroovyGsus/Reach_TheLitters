@@ -10,6 +10,8 @@ public class BotonesInGame : MonoBehaviour
 
     public int nextSceneIndex;
 
+    //Este script es una especie de GameController que gestiona los botones in-game
+
     // Start is called before the first frame update
     void Start()
     {

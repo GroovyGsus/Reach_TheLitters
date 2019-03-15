@@ -5,7 +5,7 @@ using UnityEngine;
 public class audioRecuentoLlaves : MonoBehaviour
 { 
      AudioSource sonidoRecuentoLlaves;
-// Start is called before the first frame update
+//Hace sonar las llaves 
 void Start()
     {
         sonidoRecuentoLlaves = GetComponent<AudioSource>();

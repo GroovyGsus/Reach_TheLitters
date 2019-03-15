@@ -46,6 +46,7 @@ public class GameController : MonoBehaviour
             Destroy(gameObject);
         }
 
+        //Usamos dontDestroyOnLoad y cogemos toda la información guardada del playerprefs
         DontDestroyOnLoad(gameObject);
         llavesTotales = PlayerPrefs.GetInt("llaves_totales");
         nivelMax[0] = PlayerPrefs.GetInt("nivelMax0");
@@ -59,7 +60,7 @@ public class GameController : MonoBehaviour
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    // called second
+    // busca distintos paneles que necesitamos cada vez que cargamos una escena nueva
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
     
@@ -113,6 +114,8 @@ public class GameController : MonoBehaviour
 
 
     }
+
+    //Pone el juego en pausa
     public void Pausa()
     {
         pausa = !pausa;
@@ -135,17 +138,21 @@ public class GameController : MonoBehaviour
         Debug.Log("Pausado!");
     }
 
+    //Oculta la interfaz ingame
     public void OcultaInterfaz ()
     {
         botonPausa.active = false;
         panelLlaves.active = false;
     }
 
+    //Muestra la interfaz ingame
     public void ActivaInterfaz ()
     {
         botonPausa.active = true;
         panelLlaves.active = true;
     }
+
+    //Reinicia un nivel
     public void Reinicio()
     {
         pausa = false;
@@ -156,7 +163,7 @@ public class GameController : MonoBehaviour
     }
 
     
-
+    //Carga distintas pantallas del juego, tanto de los menús como in-game
     public void CargarSeleccionMundo()
     {
         CompruebaMundosDesbloqueados();
@@ -261,7 +268,7 @@ public class GameController : MonoBehaviour
     }
 
    
-
+    //Actualiza el numero de llaves
     public void numerodeLlaves()
     {
         if (PanelLlavesAnimator != null)
@@ -280,6 +287,7 @@ public class GameController : MonoBehaviour
         PanelLlavesNivelCompletado.SetTrigger("reinicia");
     }
 
+    //Suena un sonido al recoger una llave
     public void SonidoCogerLlave()
     {
         sonidoCogerLlave.Play();
@@ -298,11 +306,13 @@ public class GameController : MonoBehaviour
 
     }
 
+    //Pone las llaves de un nivel a cero
     public void LlavesACero()
     {
         llaves = 0;
     }
 
+    //Comprueba y desbloquea los niveles al completar los anteriores, además de almacenar esa información en el playerprefs
     public void GuardarNivel(int nivel, int mundo) {
         int llavesNivel = PlayerPrefs.GetInt("llaves_" + nivel + "_" + mundo);
         if ( llavesNivel < llaves)
@@ -324,6 +334,7 @@ public class GameController : MonoBehaviour
         PlayerPrefs.Save();
     }
 
+    //Comprueba y desbloquea los mundos cuando llegamos a X llaves, además de almacenar esa información en el playerprefs
     public void CompruebaMundosDesbloqueados()
     {
         if(nivelMax[0] == 0)
@@ -346,15 +357,5 @@ public class GameController : MonoBehaviour
         }
     }
     
-    /*
-    public void CargarMundo(int mundo, int totalNivelesMundo) {
-        for (int i = 0; i < totalNivelesMundo; i++) {
-            int desbloqueado = PlayerPrefs.GetInt("desbloqueado_mundo_" + mundo + "_nivel_" + i);
-            
-            // SI desbloqueado = 1 ==> El nivel está desbloqueado
-            // Activar o descativar el boton del nivel
-
-        }
-
-    }*/
+    
 }
